@@ -19,6 +19,9 @@ We are also implementing PostgreSQL for the backend work : i.e store form inform
     - Design Mockup for info tabs
 - Project File Structure
     - git workflow, Timoteo is project manager & git repo owner
+    - Master Branch 
+    - Developer Branch
+    - One Branch for Memeber
     - pages <html directory> | styles <css directory> | apps <js directory>
 - Email client for more information
 - Stretch Goals 
