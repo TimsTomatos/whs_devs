@@ -1,0 +1,68 @@
+#main 
+{
+    overflow: auto;
+}
+
+h3, h2, h1, p
+{
+    font-family: 'Times New Roman', Times, serif
+
+} 
+/** Nav Bar **/
+#navBar 
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 10px;
+    background-color:#0099ff;
+    color: white;
+}
+
+#navLoginElem
+{
+    
+}
+.navElem 
+{
+    display: flex;
+    
+}
+
+
+
+/** Image Gallery **/
+#bckgrdImageContainer
+{
+    display: flex; 
+    position: relative;
+    justify-content: center;
+    height: 100%;   
+}
+
+.bckgrdImage
+{
+    display: flex;
+    height: 0%;
+    width: 60%;
+    z-index: -1;
+}
+
+.title
+{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    color: white;
+}
+
+#arrows
+{
+    position: absolute;
+    bottom: 50%;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
