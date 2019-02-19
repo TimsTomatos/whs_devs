@@ -19,13 +19,16 @@ h3, h2, h1, p
     font-family: 'Times New Roman', Times, serif
 
 } 
+
+
 /** Nav Bar **/
 #navBar 
 {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: whitesmoke;
     color: black;
 }
 
@@ -37,13 +40,19 @@ h3, h2, h1, p
 .navElem 
 {
     text-align: center;
-    height: 100%;
     width: 20%;
+
 }
 
 
 
 /** Image Gallery **/
+#mid
+{
+    width:100%;
+    height: 50%;
+}
+
 #bckgrdImageContainer
 {
     display: flex; 
@@ -55,19 +64,18 @@ h3, h2, h1, p
 .bckgrdImage
 {
     display: flex;
-    height: 0%;
-    width: 100%;
+    width: 88%;
+
     z-index: -1;
 }
 
 .title
 {
-    display: flex;
+    
     justify-content: center;
     position: absolute;
     color: white;
 }
-
 
 
 /** Arrows **/
@@ -92,4 +100,26 @@ h3, h2, h1, p
     background: transparent;
     border: none;
     font-size: 2em;
+}
+
+
+/** Donate and Volunteer buttons **/
+#bottom 
+{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 30%;
+}
+
+#donate
+{
+
+}
+
+#volunteer
+{
+
 }
