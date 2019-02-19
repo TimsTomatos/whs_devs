@@ -1,5 +1,5 @@
 /** To whom this CSS may concern, it has come to my attention that CSS is the big gay. Throughout my many adventures I have encountered many issues with images. I'm hoping to prevail from this tough situation, but my luck seems to be running out. **/
-body, html 
+body, html, #body
 {
     margin: 0;
     padding: 0;
@@ -12,7 +12,6 @@ body, html
 {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
 }
 
 h3, h2, h1, p
@@ -113,7 +112,8 @@ h3, h2, h1, p
     width: 20%;
     color: whitesmoke;
     background-color: lime;
-    border-radius: 25px
+    border-radius: 25px;
+    padding: 1.0rem 0;
 }
 
 #volunteer
@@ -122,5 +122,6 @@ h3, h2, h1, p
     width: 20%;
     color: whitesmoke;
     background-color: lime;
-    border-radius: 25px
+    border-radius: 25px;
+    padding: 1.0rem 0;
 }
