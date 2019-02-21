@@ -1,40 +1,69 @@
-/** To whom this CSS may concern, it has come to my attention that CSS is the big gay. Throughout my many adventures I have encountered many issues with images. I'm hoping to prevail from this tough situation, but my luck seems to be running out. **/
-body, html, #body
+/* To whom this CSS may concern, 
+it has come to my attention that CSS is the big gay. 
+Throughout my many adventures I have encountered many issues with images. 
+I'm hoping to prevail from this tough situation, but my luck seems to be running out. 
+
+If you are still reading from this point, the chapters will be layed in decending order 
+
+**** Chapters **** 
+ 
+    1: Soma & Cran Essentials 
+
+    2: Navigation Map
+
+    3: The Centre & its title
+
+    4: Underpassing/Denoncement
+
+    Note: The future will chan
+*/
+body, html, #main
 {
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
-
+    background-color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
 }
 
-#main 
+/* #main 
 {
     display: flex;
     flex-direction: column;
-}
-
-h3, h2, h1, p
-{
-    font-family: 'Times New Roman', Times, serif
-
-} 
+} */
 
 
 /** Nav Bar **/
 #navBar 
 {
-    width: 100%;
-    height: 100%;
+    height: 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     color: black;
 }
 
-#navLoginElem
+#navBar > ul 
 {
-    
+    display: flex;
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    font-size: 1.3rem;
+    padding: 0;
+    list-style: none;
+}
+
+#navBar > ul > li {
+    margin: auto;
+}
+
+.navElem:nth-child(5) {
+    background: lime;
+    padding: 0.43rem 0.25rem;
+    border-radius: 0.5rem;
+    color: whitesmoke;
 }
 
 .navElem 
@@ -45,13 +74,18 @@ h3, h2, h1, p
 }
 
 
-
 /** Image Gallery **/
 #mid
 {
+    position: relative;
     display: flex; 
     justify-content: center;
     width: 100%;
+    height: 75%;
+    background-image: url('https://www.fbi.gov/image-repository/hawaii-adopt-a-school-laanui-040617.jpg/@@images/image/high');
+    background-position: center;
+    background-size: cover;
+    background-clip: initial;
 }
 
 
@@ -63,18 +97,13 @@ h3, h2, h1, p
     font-size: 5em;
 }
 
-#bckgrdImage
-{
-    width: 80%;
-    height: 100%;
-}
 
 
 /** Arrows **/
 #arrows
 {
     position: absolute;
-    height: 85%;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -82,16 +111,20 @@ h3, h2, h1, p
 
 #arrowLeft
 {
+    padding: 0 1rem;
     background: transparent;
     border: none;
     font-size: 2em;
+    color: whitesmoke;
 }
 
 #arrowRight
 {
+    padding: 0 1rem;
     background: transparent;
     border: none;
     font-size: 2em;
+    color: whitesmoke;
 }
 
 
@@ -103,25 +136,16 @@ h3, h2, h1, p
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
-    height: 40%;
+    height: 15%;
 }
 
-#donate
+#bottom > h2
 {
-    height: 100%;
-    width: 20%;
+    padding: 0;
+    margin: 0;
+    margin: auto 0;
+    padding: 1rem 3rem;   
     color: whitesmoke;
     background-color: lime;
-    border-radius: 25px;
-    padding: 1.0rem 0;
-}
-
-#volunteer
-{
-    height: 100%;
-    width: 20%;
-    color: whitesmoke;
-    background-color: lime;
-    border-radius: 25px;
-    padding: 1.0rem 0;
+    border-radius: 12px;
 }
