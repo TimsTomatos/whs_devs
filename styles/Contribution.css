@@ -67,3 +67,26 @@ body, html, #main
 {
 
 }
+
+/** Bottom Portion **/
+#bottom
+{
+    margin: 2% 2%;
+    border: 2px solid black;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#bottom > h2 
+{
+    padding: 0 1rem;
+}
+
+#bottom > h2:not(:last-child)
+{
+    padding: 0 1rem;
+    border-right: 1px solid black;
+}
