@@ -109,7 +109,7 @@ body, html, #main
     justify-content: space-between;
 }
 
-#arrowLeft
+#arrowRight
 {
     padding: 0 1rem;
     background: transparent;
@@ -118,7 +118,7 @@ body, html, #main
     color: whitesmoke;
 }
 
-#arrowRight
+#arrowLeft
 {
     padding: 0 1rem;
     background: transparent;
