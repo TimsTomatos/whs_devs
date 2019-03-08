@@ -27,8 +27,8 @@ function rightImage() {
 }
 
 function leftImage() {
-    if (increment == 2) {
-        increment = 0;
+    if (increment == 0) {
+        increment = 3;
     }
     increment--;
     container.style.backgroundImage = images[increment]; 
