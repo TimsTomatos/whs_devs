@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="form">
+        <input id="user" type="text" placeholder="email"/>
+        <input id="pass" type="text" placeholder="password"/>
+        <button>Submit</button>
+    </form>
+
+
+    <form id="loginIn">
+        <input id="user" type="text" placeholder="email"/>
+        <input id="pass" type="text" placeholder="password"/>
+        <button>Login In</button>
+    </form>
+</body>
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAVGq1K_E0Fkzo1DDHch_uS-2_hkfDa1q8",
+    authDomain: "whs-devs.firebaseapp.com",
+    databaseURL: "https://whs-devs.firebaseio.com",
+    projectId: "whs-devs",
+    storageBucket: "whs-devs.appspot.com",
+    messagingSenderId: "978939713269"
+  };
+  firebase.initializeApp(config);
+
+  const auth = firebase.auth();
+</script>
+<script src="../apps/auth.js"></script>
+</html>
