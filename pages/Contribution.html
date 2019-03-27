@@ -41,7 +41,37 @@
             <h2 id="donation">Donation Amount</h2>
         </div>
         
+
+        <!--Testing-->
+        <form id="form">
+            <input type="text" id="nam" placeholder="name">
+            <input type="text" id="company1" placeholder="company">
+            <input type="text" id="support1" placeholder="support">
+            <input type="text" id="hours1" placeholder="hours">
+            <input type="text" id="donation1" placeholder="donation">
+            <button>Submit</button>
+        </form>
     </div>
 
+   
+
 </body>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAVGq1K_E0Fkzo1DDHch_uS-2_hkfDa1q8",
+    authDomain: "whs-devs.firebaseapp.com",
+    databaseURL: "https://whs-devs.firebaseio.com",
+    projectId: "whs-devs",
+    storageBucket: "whs-devs.appspot.com",
+    messagingSenderId: "978939713269"
+  };
+  firebase.initializeApp(config);
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+</script>
+<script src="../apps/Contribution.js"></script>
 </html>
