@@ -45,7 +45,12 @@ login.addEventListener('submit', function(parm) {
     var password_value =  pass_login.value;
 
     auth.signInWithEmailAndPassword(username_value, password_value)
-    .then(function () {
+    .then(function (user) {
+        
+        //Checks for admin account
+        if (user = "admin@gmail.com") {
+            console.log("Working as Intended!!") 
+        }
         console.log("Login Successful")
     })
 })
@@ -59,3 +64,6 @@ logout_button.addEventListener('click', function () {
     })
 
 })
+
+
+
