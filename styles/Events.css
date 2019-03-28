@@ -1,10 +1,10 @@
 @keyframes fade{
     0%{
-        opacity: 0;
+        opacity: 1;
     }
 
     100%{
-        opacity: 1;
+        opacity: 0;
     }
 }
 
@@ -95,54 +95,59 @@ body, html, #main
     width: 20%;
     height: 30rem;
     position: relative;
-}
-
-.cards
-{
-    position: absolute;
-    height: 100%;
-    width: 100%;
+    perspective: 1000px;
     border: 2px solid black;
     border-radius: 2rem;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+#innerCard 
+{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+#masterCard:hover #innerCard
+{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center; 
-    overflow: hidden;
+    display:block;
+    transform: rotateY(180deg);
+}
+.cardFront, .cardsBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.cardFront
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center; 
     display:block;
     z-index:2;
-    background-color:white;
-}
-
-.cards:hover
-{
-    animation:fade 1s;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border: 2px solid black;
-    border-radius: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center; 
-    overflow: hidden;
-    display:none;
-    z-index: 0;
+    background: whitesmoke;
 }
 
 .cardsBack
 {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border: 2px solid black;
-    border-radius: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center; 
-    overflow: hidden;
+    z-index:1;
+    transform: rotateY(180deg);
+    background: tomato;
 }
 
 
