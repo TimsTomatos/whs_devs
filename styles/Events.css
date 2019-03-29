@@ -1,14 +1,3 @@
-@keyframes fade{
-    0%{
-        opacity: 1;
-    }
-
-    100%{
-        opacity: 0;
-    }
-}
-
-
 body, html, #main
 {
     margin: 0;
@@ -147,7 +136,7 @@ body, html, #main
     text-align: center; 
     z-index:1;
     transform: rotateY(180deg);
-    background: tomato;
+    background: whitesmoke;
 }
 
 
