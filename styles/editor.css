@@ -1,10 +1,31 @@
 
-body, html, #main
-{
+body, html, #main {
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
     background-color: whitesmoke;
     font-family: 'Open Sans', sans-serif;
+}
+
+#main {
+    display: flex; 
+    flex-direction: row;
+}
+
+#left {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+#middle {
+    height: 100%;
+    width: 40%;
+}
+
+#right {
+    height: 100%;
+    width: 40%;
 }
