@@ -23,9 +23,25 @@ body, html, #main {
 #middle {
     height: 100%;
     width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+#name {
+    display: flex;
+    flex-direction: row;
+
 }
 
 #right {
     height: 100%;
     width: 40%;
+}
+
+#editing {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
