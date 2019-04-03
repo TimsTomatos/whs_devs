@@ -23,3 +23,16 @@ form.addEventListener("submit", function (e){
     db.collection("partners").add(data).then(function (){
     });
 });
+
+
+
+
+
+db.collection('partners').onSnapshot(function (snapshot) {
+    let changes = snapshot.docChanges();
+    changes.forEach(function (change) {
+        console.log(change.doc.data().company)
+        render.innerHTML = change.doc
+        
+    })
+})
