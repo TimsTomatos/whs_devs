@@ -35,9 +35,17 @@ form.addEventListener("submit", function (e){
 
 db.collection('partners').onSnapshot(function (snapshot) {
     let changes = snapshot.docChanges();
+    let hi = 'hi'
     changes.forEach(function (change) {
         console.log(change.doc.data().company)
-        name1.innerHTML += '<br>' + change.doc.data().company +' ' + change.doc.data().hours + ' ' + change.doc.data().namae
-        
+        render.innerHTML += `
+        <div class="bottom"> 
+            <h2>${change.doc.data().company}</h2>
+            <h2>${change.doc.data().namae}</h2>
+            <h2>${change.doc.data().hours}</h2>
+            <h2>${change.doc.data().support}</h2>
+            <h2>${change.doc.data().donation}</h2>
+        </div>
+        `
     })
 })

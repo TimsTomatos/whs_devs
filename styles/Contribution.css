@@ -69,7 +69,7 @@ body, html, #main
 }
 
 /** Bottom Portion **/
-#bottom
+.bottom
 {
     margin: 2% 2%;
     border: 2px solid black;
