@@ -21,6 +21,5 @@ form.addEventListener("submit", function (e){
     console.log(data);
     e.preventDefault();
     db.collection("partners").add(data).then(function (){
-
     });
 });
