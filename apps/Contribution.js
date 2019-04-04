@@ -2,8 +2,6 @@ var form = document.querySelector("#form");
 
 
 
-//test
-var name1 = document.querySelector("#name")
 
 // User Input Values
 var namae = document.querySelector("#nam");
