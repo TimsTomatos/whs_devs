@@ -1,0 +1,50 @@
+
+body, html, #main {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#main {
+    display: flex; 
+    flex-direction: row;
+}
+
+#left {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+}
+
+#middle {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+}
+
+#name {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#right {
+    height: 100%;
+    width: 40%;
+    background-color: lightblue;
+}
+
+#editing {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
