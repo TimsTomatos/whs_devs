@@ -15,10 +15,19 @@ body, html, #main {
 
 #left {
     height: 100%;
-    width: 20%;
+    width: 30%;
     display: flex;
     flex-direction: column;
-    background-color: aqua;
+    background-color: #3333cc;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+#top-left {
+    background-color: #0066ff;
+    margin: 0%;
+    width: 100%;
 }
 
 #middle {
@@ -26,7 +35,12 @@ body, html, #main {
     width: 40%;
     display: flex;
     flex-direction: column;
-    background-color: blue;
+    background-color: whitesmoke;
+}
+
+#top-middle {
+    background-color: whitesmoke;
+    padding: 1rem;
 }
 
 #name {
@@ -37,14 +51,26 @@ body, html, #main {
 
 #right {
     height: 100%;
-    width: 40%;
-    background-color: lightblue;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+
+#top-right {
+    background-color: whitesmoke;
+    padding: 1rem;
+    text-align: center;
 }
 
 #editing {
     width: 80%;
     height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: column;;
+}
+
+.textBox {
+    margin-bottom: 2rem;
+
 }
