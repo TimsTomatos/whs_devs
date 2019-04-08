@@ -1,0 +1,143 @@
+body, html, #main
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ /** Nav Bar **/
+#navBar 
+{
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: black;
+}
+
+#navBar > ul 
+{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    font-size: 1.3rem;
+    padding: 0;
+    list-style: none;
+}
+
+#navBar > ul > li 
+{
+    margin: auto;
+    text-align: center;
+}
+
+.navElem:nth-child(5)
+{
+    background: lime;
+    padding: 0.43rem 0.25rem;
+    border-radius: 0.5rem;
+    color: whitesmoke;
+}
+
+.navElem 
+{
+    text-align: center;
+    width: 20%;
+}
+
+#logo
+{
+   
+}
+
+/** Middle Portion **/
+#mid
+{
+    margin: 0% 3%;
+    border: 2px solid black;
+    border-radius: 1rem;
+    text-align: left;
+}
+
+#mid > h1 
+{
+
+}
+
+/** Bottom Portion **/
+#bottom
+{
+    margin: 2% 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#masterCard
+{
+    width: 20%;
+    height: 30rem;
+    position: relative;
+    perspective: 1000px;
+    border: 2px solid black;
+    border-radius: 2rem;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+#innerCard 
+{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+#masterCard:hover #innerCard
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center; 
+    display:block;
+    transform: rotateY(180deg);
+}
+.cardFront, .cardsBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.cardFront
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center; 
+    display:block;
+    z-index:2;
+    background: whitesmoke;
+}
+
+.cardsBack
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center; 
+    z-index:1;
+    transform: rotateY(180deg);
+    background: whitesmoke;
+}
+
+
+

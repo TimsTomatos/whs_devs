@@ -1,0 +1,92 @@
+body, html, #main
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ /** Nav Bar **/
+#navBar 
+{
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: black;
+}
+
+#navBar > ul 
+{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    font-size: 1.3rem;
+    padding: 0;
+    list-style: none;
+}
+
+#navBar > ul > li 
+{
+    margin: auto;
+    text-align: center;
+}
+
+.navElem:nth-child(5)
+{
+    background: lime;
+    padding: 0.43rem 0.25rem;
+    border-radius: 0.5rem;
+    color: whitesmoke;
+}
+
+.navElem 
+{
+    text-align: center;
+    width: 20%;
+}
+
+#logo
+{
+   
+}
+
+/** Middle Portion **/
+#mid
+{
+    margin: 0% 3%;
+    border: 2px solid black;
+    border-radius: 1rem;
+    text-align: left;
+}
+
+#mid > h1 
+{
+
+}
+
+/** Bottom Portion **/
+.bottom
+{
+    margin: 2% 2%;
+    border: 2px solid black;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#bottom > h2 
+{
+    padding: 0 1rem;
+}
+
+#bottom > h2:not(:last-child)
+{
+    padding: 0 1rem;
+    border-right: 1px solid black;
+}
