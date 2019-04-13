@@ -9,7 +9,7 @@ body, html, #main {
 
 #top-bar {
     width: 100%;
-    height: 10%;
+    height: 15%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

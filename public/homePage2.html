@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="../styles/homePage2.css">
     <title>HomePage 2.0</title>
 </head>
+
 <body>
     <div id="top-bar">
         <div id="title-bar">
@@ -16,11 +26,32 @@
         </div>
 
         <div id="nav-bar">
+            <ul id="slide-out" class="sidenav">
+                <li>
+                    <div class="user-view">
+                        <div class="background">
+                            <img src="https://t4.rbxcdn.com/74ea46a6eab6ba255a838ff21021d57d">
+                        </div>
+                        <a href="#user"><img class="circle" src="https://vignette.wikia.nocookie.net/mining-simulator/images/9/99/8_Legged_Oof.png/revision/latest?cb=20180921111133"></a>
+                        <a href="#name"><span class="black-text name">OOF</span></a>
+                        <a href="#email"><span class="black-text email">OOF@gmail.com</span></a>
+                    </div>
+                </li>
+                <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+                <li><a href="#!">Second Link</a></li>
+                <li>
+                    <div class="divider"></div>
+                </li>
+                <li><a class="subheader">Subheader</a></li>
+                <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+            </ul>
+            <a href="#" data-target="slide-out" class="sidenav-trigger waves-effect waves-light btn"><i class="material-icons">menu</i></a>
             <div class="nav-button">oof</div>
             <div class="nav-button">oof</div>
             <div class="nav-button">oof</div>
-            <div class="nav-button">oof</div>
-            <img id="logo" src="https://vignette.wikia.nocookie.net/mining-simulator/images/9/99/8_Legged_Oof.png/revision/latest?cb=20180921111133" alt="Logo">
+            <img id="logo"
+                src="https://vignette.wikia.nocookie.net/mining-simulator/images/9/99/8_Legged_Oof.png/revision/latest?cb=20180921111133"
+                alt="Logo">
             <div class="nav-button">oof</div>
             <div class="nav-button">oof</div>
             <div class="nav-button">oof</div>
@@ -31,15 +62,16 @@
     <div id="img">
 
     </div>
-    
+
     <div id="boxes">
 
     </div>
 
-    <footer id="footer"> 
+    <footer id="footer">
 
     </footer>
 
 </body>
 <script src="../apps/homePage2.js"></script>
+
 </html>
