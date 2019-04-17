@@ -27,6 +27,12 @@
             </div>
 
             <div id="nav-bar">
+                <!---->
+               
+
+
+
+                <!---->
                 <ul id="slide-out" class="sidenav">
                     <li>
                         <div class="user-view">
@@ -56,12 +62,86 @@
                     src="https://vignette.wikia.nocookie.net/mining-simulator/images/9/99/8_Legged_Oof.png/revision/latest?cb=20180921111133"
                     alt="Logo">
                 <div class="nav-button">How it works</div>
-                <div class="nav-button">Login</div>
-                <div class="nav-button">Join</div>
-                <div class="nav-button">Box</div>
+                <div class="nav-button" id="mybtn" onclick="open_modal()">Login</div>
+                <div class="nav-button" id="render-username">test</div>
+                <button class="nav-button" id="btn-logout" onclick="logout()">Logout</button>
             </div>
         </div>
     </div>
+
+
+    <!--Modal-->
+    <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            
+                    <div id="login-box">
+                            <!--<div id="login-content">
+                            
+                            <input type="text" placeholder="username">
+                            <input type="text" placeholder="password">
+                            <a href="">Dont Have an Account? Sign Up Now!</a> -->
+                        
+            
+                        <span class="close">&times;</span>
+                        <section class="forms-section">
+                            <div class="forms">
+                              <div class="form-wrapper is-active">
+                                <button type="button" class="switcher switcher-login">
+                                  Login
+                                  <span class="underline"></span>
+                                </button>
+                                <form class="form form-login">
+                                  <fieldset>
+                                    <legend>Please, enter your email and password for login.</legend>
+                                    <div class="input-block">
+                                      <label for="login-email">E-mail</label>
+                                      <input id="login-email" type="email" required>
+                                    </div>
+                                    <div class="input-block">
+                                      <label for="login-password">Password</label>
+                                      <input id="login-password" type="password" required>
+                                    </div>
+                                  </fieldset>
+                                  <button type="submit" id="btn-login">Login</button>
+                                </form>
+                              </div>
+                              <div class="form-wrapper">
+                                <button type="button" class="switcher switcher-signup" id="btn-sign">
+                                  Sign Up
+                                  <span class="underline"></span>
+                                </button>
+                                <form class="form form-signup">
+                                  <fieldset>
+                                    <legend>Please, enter your email, password and password confirmation for sign up.</legend>
+                                    <div class="input-block">
+                                      <label for="signup-email">E-mail</label>
+                                      <input id="signup-email" type="email" required>
+                                    </div>
+                                    <div class="input-block">
+                                      <label for="signup-password">Password</label>
+                                      <input id="signup-password" type="password" required>
+                                    </div>
+                                    <div class="input-block">
+                                      <label for="signup-password-confirm">Confirm password</label>
+                                      <input id="signup-password-confirm" type="password" required>
+                                    </div>
+                                  </fieldset>
+                                  <button type="submit" class="btn-signup">Continue</button>
+                                </form>
+                              </div>
+                            </div>
+                          </section>
+                        </div>
+            
+          
+    </div>
+          
+
+
+
+
+
 
     <div id="img-container">
         <div id="arrows">
@@ -105,6 +185,20 @@
     </footer>
 
 </body>
+<script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAVGq1K_E0Fkzo1DDHch_uS-2_hkfDa1q8",
+    authDomain: "whs-devs.firebaseapp.com",
+    databaseURL: "https://whs-devs.firebaseio.com",
+    projectId: "whs-devs",
+    storageBucket: "whs-devs.appspot.com",
+    messagingSenderId: "978939713269"
+  };
+  firebase.initializeApp(config);
+  const auth = firebase.auth();
+</script>
 <script src="../apps/homePage2.js"></script>
 
 </html>
