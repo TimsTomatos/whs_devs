@@ -6,7 +6,7 @@ body, html, #main {
     background-color: whitesmoke;
     font-family: 'Open Sans', sans-serif;
 }
-
+/** Start of Top section **/
 #top {
     width: 100%;
     height: 8%;
@@ -40,7 +40,9 @@ body, html, #main {
     width: 50px;
     height: 50px;
 }
+/** End of top section **/
 
+/** start of Image/video area **/
 #img-container
 {
     position: relative;
@@ -81,7 +83,9 @@ body, html, #main {
     font-size: 2em;
     color: whitesmoke;
 }
+/** End of image/video area **/
 
+/** Start of box info**/
 .boxes
 {
     position: relative;
@@ -98,16 +102,70 @@ body, html, #main {
 .imgBox {
     height: 100%;
 }
+/** End of box info **/
 
+/** Start of footer **/
 #footer {
     color: #B9B8B8;
     background-color: #1D1D1D;
-    height: 25%;
+    height: 20%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
-#miniFooter {
-    height: 100%;
-    width: 45%;
+/** Contact button **/
+#contact {
+    background-color: #1D1D1D;
+    color: grey;
+    box-shadow: none;
 }
+
+#contact:hover {
+    background-color: #1D1D1D;
+    color: white;
+}
+
+/** About us button **/
+#about {
+    background-color: #1D1D1D;
+    color: grey;
+    box-shadow: none;
+}
+
+#about:hover {
+    background-color: #1D1D1D;
+    color: white;
+}
+
+/** Q&A button **/
+#QA {
+    background-color: #1D1D1D;
+    color: grey;
+    box-shadow: none;
+}
+
+#QA:hover {
+    background-color: #1D1D1D;
+    color: white;
+}
+
+/** Different links **/
+.links{
+    background-color: #1D1D1D;
+    color: grey;
+    width: 50%;
+    box-shadow: none;
+    margin: 1px;
+}
+
+.links:hover{
+    background-color: #1D1D1D;
+    color: white;
+}
+
+/** Copyright portion **/
+#copyright {
+    height: 100%;
+}
+/** End of footer **/
