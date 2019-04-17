@@ -7,9 +7,16 @@ body, html, #main {
     font-family: 'Open Sans', sans-serif;
 }
 
-#top-bar {
+#top {
     width: 100%;
-    height: 15%;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+}
+
+#top-bar {
+    width: 45%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -17,15 +24,15 @@ body, html, #main {
 
 #title {
     height: 100%;
+    font-weight: bold;
     font-size: 1rem;
-    margin-left: 8%;
 }
 
 #nav-bar {
     height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -41,7 +48,7 @@ body, html, #main {
     justify-content: center;
     width: 100%;
     height: 75%;
-    background-image: url('https://www.fbi.gov/image-repository/hawaii-adopt-a-school-laanui-040617.jpg/@@images/image/high');
+    background-image: url('https://blog.ed.gov/files/2014/04/13556050275_1a21b594a8_b.jpg');
     background-position: center;
     background-size: cover;
     background-clip: initial;
@@ -84,8 +91,23 @@ body, html, #main {
     height: 75%;
 }
 
+.textBox {
+    height: 100%;
+}
+
+.imgBox {
+    height: 100%;
+}
+
 #footer {
     color: #B9B8B8;
     background-color: #1D1D1D;
     height: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+#miniFooter {
+    height: 100%;
+    width: 45%;
 }
