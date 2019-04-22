@@ -132,13 +132,15 @@ body, html, #main {
     position: relative;
 }
 .clipart-image {
-    height: 250px;
+    max-height: 200px;
 }
 .column {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 250px;
+    word-wrap: break-word;
 }
 .sub-header {
     font-size: 36px;
