@@ -134,15 +134,16 @@ body, html, #main {
 .clipart-image {
     height: 250px;
 }
-.clipart-headers {
-    margin-top: 22%;
+.column {
+    position: relative;
     display: flex;
-    width: 100%;
-    justify-content: space-evenly;
-    position: absolute;
+    flex-direction: column;
+    justify-content: center;
 }
 .sub-header {
     font-size: 36px;
+    display: flex;
+    justify-content: center;
 }
 
 
