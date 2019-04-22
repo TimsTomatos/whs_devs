@@ -54,15 +54,79 @@
                         class="material-icons">menu</i></a>
                 <div class="nav-button">Get Started</div>
                 <div class="nav-button">Products</div>
-                <div class="nav-button">Donations</div>
                 <img id="logo" src="../ourLogo.png" alt="Logo">
+                <div class="nav-button">Donations</div>
                 <div class="nav-button">How it works</div>
-                <div class="nav-button">Login</div>
-                <div class="nav-button">Join</div>
-                <div class="nav-button">Box</div>
+                <div id="login/join-button" class="nav-button">Login/Join</div>
+                <div id="render-username" class="nav-button">How it works</div>
+                <div id="logout-button" class="nav-button">Logout</div>
             </div>
         </div>
     </div>
+
+
+
+    <!--Testing-->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <section class="forms-section">
+                <div class="forms">
+                  <div class="form-wrapper is-active">
+                    <button type="button" class="switcher switcher-login">
+                      Login
+                      <span class="underline"></span>
+                    </button>
+                    <form class="form form-login">
+                      <fieldset>
+                        <legend>Please, enter your email and password for login.</legend>
+                        <div class="input-block">
+                          <label for="login-email">E-mail</label>
+                          <input id="login-email" type="email" required>
+                        </div>
+                        <div class="input-block">
+                          <label for="login-password">Password</label>
+                          <input id="login-password" type="password" required>
+                        </div>
+                      </fieldset>
+                      <button id="login-button" type="submit" class="btn-login">Login</button>
+                    </form>
+                  </div>
+                  <div class="form-wrapper">
+                    <button type="button" class="switcher switcher-signup">
+                      Sign Up
+                      <span class="underline"></span>
+                    </button>
+                    <form class="form form-signup">
+                      <fieldset>
+                        <legend>Please, enter your email, password and password confirmation for sign up.</legend>
+                        <div class="input-block">
+                          <label for="signup-email">E-mail</label>
+                          <input id="signup-email" type="email" required>
+                        </div>
+                        <div class="input-block">
+                          <label for="signup-password">Password</label>
+                          <input id="signup-password" type="password" required>
+                        </div>
+                        <div class="input-block">
+                          <label for="signup-password-confirm">Confirm password</label>
+                          <input id="signup-password-confirm" type="password" required>
+                        </div>
+                      </fieldset>
+                      <button id="signup-button" type="submit" class="btn-signup">Continue</button>
+                    </form>
+                  </div>
+                </div>
+              </section>
+        </div>
+      
+      </div>
+
+
+
+
 
     <div id="img-container">
         <video autoplay muted loop id="myVideo">
@@ -185,6 +249,20 @@
     </div>
 
 </body>
+<script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAVGq1K_E0Fkzo1DDHch_uS-2_hkfDa1q8",
+    authDomain: "whs-devs.firebaseapp.com",
+    databaseURL: "https://whs-devs.firebaseio.com",
+    projectId: "whs-devs",
+    storageBucket: "whs-devs.appspot.com",
+    messagingSenderId: "978939713269"
+  };
+  firebase.initializeApp(config);
+  const auth = firebase.auth();
+</script>
 <script src="../apps/homePage2.js"></script>
 
 </html>

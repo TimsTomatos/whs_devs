@@ -195,7 +195,6 @@ body, html, #main {
 
 
 
-
 #logout-button {
     display: none;
 }
@@ -221,14 +220,12 @@ body, html, #main {
     overflow: hidden;
     padding-bottom: 1000px;
   }
-
   /* Modal Content/Box */
   .modal-content {
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     width: 80%; 
   }
-
   /* The Close Button */
   .close {
     color: #aaa;
@@ -236,7 +233,6 @@ body, html, #main {
     font-size: 28px;
     font-weight: bold;
   }
-
   .close:hover,
   .close:focus {
     color: black;
