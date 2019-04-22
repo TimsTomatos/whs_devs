@@ -118,6 +118,37 @@ body, html, #main {
 }
 /** End of box info **/
 
+
+/** Body Content Stuff **/
+#header-text {
+    position: absolute;
+}
+.clipart-images {
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+}
+.clipart-image {
+    height: 250px;
+}
+.clipart-headers {
+    margin-top: 22%;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    position: absolute;
+}
+.sub-header {
+    font-size: 36px;
+}
+
+
+
+/** End of Body Content Stuff **/
+
 /** Start of footer **/
 .page-footer {
     padding-top: 5px;
@@ -192,6 +223,15 @@ body, html, #main {
     font-weight: bold;
 }
 /** End of footer **/
+
+
+
+
+
+
+
+
+
 
 
 
