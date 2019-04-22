@@ -43,20 +43,20 @@ body, html, #main {
 /** End of top section **/
 
 /** start of Image/video area **/
+#text {
+    width:30%;
+    color:white;
+    position:absolute;
+    top:40%;
+    left:20%;
+}
 #img-container
 {
-    position: relative;
-    display: flex; 
-    justify-content: center;
-    width: 100%;
-    height: 75%;
-    background-image: url('https://blog.ed.gov/files/2014/04/13556050275_1a21b594a8_b.jpg');
-    background-position: center;
-    background-size: cover;
-    background-clip: initial;
-    margin-bottom: 10%;
+    margin-top:1%;
 }
-
+video {
+    width:100%;
+}
 #arrows
 {
     position: absolute;
@@ -92,7 +92,11 @@ body, html, #main {
     display: flex; 
     justify-content: center;
     width: 100%;
-    height: 75%;
+    margin-bottom:10%
+}
+
+a {
+    padding-bottom: 5%;
 }
 
 .textBox {
