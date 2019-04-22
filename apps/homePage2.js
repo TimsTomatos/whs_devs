@@ -160,7 +160,9 @@ logout_button.addEventListener('click', function () {
     auth.signOut()
     .then(function() {
         console.log("logged out")
-        render_username.innerHTML = null;
+        logout_button.style.display = "none";
+        render_username.innerHTML = "";
+        render_username.style.display = "none";
     })
 
 })
