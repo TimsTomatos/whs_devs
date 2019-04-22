@@ -55,6 +55,20 @@ body, html, #main {
     background-size: cover;
     background-clip: initial;
     margin-bottom: 10%;
+    overflow: hidden;
+}
+
+#myVideo {
+  min-width: 100%; 
+  min-height: 100%; 
+  
+  width: auto;
+  height: auto;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 #arrows
@@ -105,67 +119,76 @@ body, html, #main {
 /** End of box info **/
 
 /** Start of footer **/
-#footer {
-    color: #B9B8B8;
-    background-color: #1D1D1D;
-    height: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.page-footer {
+    padding-top: 5px;
+    background: rgb(39, 39, 39);
+    /* box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 
-/** Contact button **/
-#contact {
-    background-color: #1D1D1D;
-    color: grey;
-    box-shadow: none;
+.page-footer.dropdown > * {
+    margin-bottom: 0;
 }
 
-#contact:hover {
-    background-color: #1D1D1D;
-    color: white;
+.footerRow {
+    margin-bottom: 0;
 }
 
-/** About us button **/
-#about {
-    background-color: #1D1D1D;
-    color: grey;
-    box-shadow: none;
+#specialChild {
+    text-align: center;
 }
 
-#about:hover {
-    background-color: #1D1D1D;
-    color: white;
+.footerSubHeader {
+    text-align: center;
 }
 
-/** Q&A button **/
-#QA {
-    background-color: #1D1D1D;
-    color: grey;
-    box-shadow: none;
+.innerWorkings {
+    display: table;
+    margin: auto;
 }
 
-#QA:hover {
-    background-color: #1D1D1D;
-    color: white;
+.footerContainer {
+    width: 100%;
 }
 
-/** Different links **/
-.links{
-    background-color: #1D1D1D;
-    color: grey;
-    width: 50%;
-    box-shadow: none;
-    margin: 1px;
+.footerSubHeader {
+    margin: 0.3rem 0 0.46rem 0;
 }
 
-.links:hover{
-    background-color: #1D1D1D;
-    color: white;
+
+#footerImg {
+    display: table;
+    margin: auto;
+    filter: invert(100%);
 }
 
-/** Copyright portion **/
-#copyright {
-    height: 100%;
+.footerContent {
+    font-size: 13px;
+}
+
+.verticalDivider {
+    position: relative;
+}
+
+.verticalDivider:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.verticalDivider .column:not(:first-child):after, .vertical-divider .columns:not(:first-child):after{
+    background:#c3c3c3;
+    bottom: 0;
+    height: 50%;
+    content: " ";
+    position: absolute;
+    top: 25%;
+    width: 1px;
+}
+
+.copyright {
+    font-size: 10px;
+    font-weight: bold;
 }
 /** End of footer **/

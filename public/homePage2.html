@@ -55,9 +55,7 @@
                 <div class="nav-button">Get Started</div>
                 <div class="nav-button">Products</div>
                 <div class="nav-button">Donations</div>
-                <img id="logo"
-                    src="../ourLogo.png"
-                    alt="Logo">
+                <img id="logo" src="../ourLogo.png" alt="Logo">
                 <div class="nav-button">How it works</div>
                 <div class="nav-button">Login</div>
                 <div class="nav-button">Join</div>
@@ -67,12 +65,16 @@
     </div>
 
     <div id="img-container">
-        <div id="arrows">
+        <video autoplay muted loop id="myVideo">
+            <source src="../Videos/video4.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <!-- <div id="arrows">
             <button id="arrowLeft" onclick="leftImage()">
                 <</button> <button id="arrowRight" onclick="rightImage()">
                     >
             </button>
-        </div>
+        </div> -->
     </div>
 
     <div class="boxes">
@@ -82,30 +84,105 @@
         <img class="imgBox" src="">
     </div>
 
-    <footer id="footer" class="page-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <a id="contact" class="waves-effect waves-light btn-small">Contact Us</a>
-                    <a id="about" class="waves-effect waves-light btn-small">About Us</a>
-                    <a id="QA" class="waves-effect waves-light btn-small">Q&A</a>
+    <div class="page-footer">
+
+        <div class="container footerContainer">
+            <!--Main Container it is in-->
+
+            <div class="row footerRow verticalDivider">
+                <!--the general row it is in-->
+
+                <div class="col s12 m4 hide-on-small-only column">
+                    <!--Column 1~Image-->
+                    <img id="footerImg" src="../ourLogo.png" alt="A flat illistrated rndom">
+
                 </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Links</h5>
-                    <ul>
-                        <li><a class="waves-effect waves-light btn-small links" href="https://www.waipahuhigh.org/" target="_blank">Waipahu high School</a></li>
-                        <li><a class="waves-effect waves-light btn-small links" href="https://www.friendsofwaipahuhighschool.com/" target="_blank">Friends Of Waipahu</a></li>
-                    </ul>
+
+                <div class="col s12 m4 column">
+                    <!--Column 2~Links-->
+
+                    <div id="specialChild" class="row footerRow">
+                        <!--Level 1 of a inner Row-->
+
+                        <div class="col s12 grey-text text-lighten-1 light">
+                            <h6 class="footerSubHeader">
+                                Links
+                            </h6>
+                        </div>
+
+                        <div class="col s12">
+
+                            <div class="row footerRow">
+                                <!--Level 2 of a inner Row-->
+
+                                <a href="https://www.waipahuhigh.org/"
+                                    class="col s12 grey-text text-lighten-1 light footerContent"> Waipahu High School </a>
+                                <a href="https://www.friendsofwaipahuhighschool.com/"
+                                    class="col s12 grey-text text-lighten-1 light footerContent"> Friends Of Waipahu </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col s12 m4 column">
+                    <!--Column 2~Links-->
+
+                    <div class="row footerRow">
+                        <!--Level 1 of a inner Row-->
+
+                        <div class="col s12 grey-text text-lighten-1 light">
+                            <h6 class="footerSubHeader">
+                                Contact
+                            </h6>
+                        </div>
+
+                        <div class="col s12">
+
+                            <div class="row footerRow">
+                                <!--Level 2 of a inner Row-->
+
+                                <div href="../html/article.html"
+                                    class="col s12 grey-text text-lighten-1 light footerContent">
+                                    <div class="innerWorkings">
+                                        <i class="material-icons left">contact_phone</i>
+                                        <span>(808)221-1571</span>
+                                    </div>
+                                </div>
+
+                                <div href="../html/article.html"
+                                    class="col s12 grey-text text-lighten-1 light footerContent">
+
+                                    <div class="innerWorkings">
+                                        <i class="material-icons left">
+                                            contact_mail</i>
+                                        <span>imshiny808@gmail.com</span>
+                                    </div>
+                                </div>
+
+                                <div href="../html/article.html"
+                                    class="col s12 grey-text text-lighten-1 light footerContent">
+                                    
+                                    <div class="innerWorkings">
+                                        <i class="material-icons left">home</i>
+                                        <span>12-3456 sample st.</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
         </div>
-        <div id="copyright" class="footer-copyright">
-            <div class="container">
-                © 2019 copyright WHS Devs
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-            </div>
-        </div>
-    </footer>
+    </div>
 
 </body>
 <script src="../apps/homePage2.js"></script>
