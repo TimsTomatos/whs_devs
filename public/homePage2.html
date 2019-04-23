@@ -20,13 +20,9 @@
 <body>
     <div id="top">
         <div id="top-bar">
-            <div id="title-bar">
-                <div id="title">
-                    WHS DEVS!
-                </div>
-            </div>
 
             <div id="nav-bar">
+
                 <ul id="slide-out" class="sidenav">
                     <li>
                         <div class="user-view">
@@ -38,117 +34,128 @@
                         <div class="divider"></div>
                     </li>
                     <li><a class="subheader">Arts & Communication</a></li>
-                    <li><a class="waves-effect" href="#!">Academy of Creative Media</a></li>
+                    <li><a class="waves-effect academy" href="#!">Academy of Creative Media</a></li>
                     <li><a class="subheader">Academy of Natural Resources</a></li>
-                    <li><a class="waves-effect" href="#!">Academy of Environment Resource</a></li>
+                    <li><a class="waves-effect academy" href="#!">Academy of Environment Resource</a></li>
                     <li><a class="subheader">Industrial & Engineering Technology</a></li>
-                    <li><a class="waves-effect" href="#!">Academy of Engineering</a></li>
-                    <li><a class="waves-effect" href="#!">Academy of Information & Technology</a></li>
-                    <li><a class="waves-effect" href="#!">Academy of Professional and Public Service</a></li>
-                    <li><a class="waves-effect" href="#!">Academy of Culinary Arts</a></li>
-                    <li><a class="waves-effect" href="#!">Academy of Finance</a></li>
-                    <li><a class="waves-effect" href="#!">Academy of Health and Science</a></li>
-                    <li><a class="waves-effect" href="#!">Academy of Health</a></li>
+                    <li><a class="waves-effect academy" href="#!">Academy of Engineering</a></li>
+                    <li><a class="waves-effect academy" href="#!">Academy of Information & Technology</a></li>
+                    <li><a class="subheader" href="#!">Professional and Public Service</a></li>
+                    <li><a class="waves-effect academy" href="#!">Academy of Culinary Arts</a></li>
+                    <li><a class="waves-effect academy" href="#!">Academy of Finance</a></li>
+                    <li><a class="waves-effect academy" href="#!">Academy of Health and Science</a></li>
+                    <li><a class="waves-effect academy" href="#!">Academy of Health</a></li>
                 </ul>
                 <a href="#" data-target="slide-out" class="sidenav-trigger waves-effect waves-light btn"><i
                         class="material-icons">menu</i></a>
-                <div class="nav-button">Events</div>
-                <div class="nav-button">Contributors</div>
-                <img id="logo" src="../ourLogo.png" alt="Logo">
-                <div class="nav-button">Donation</div>
-                <div class="nav-button">Volunteer</div>
-                <div id="login/join-button" class="nav-button">Login/Join</div>
-                <div id="render-username" class="nav-button">How it works</div>
-                <div id="logout-button" class="nav-button">Logout</div>
+                <div class="nav-button">menu</div>
+                <div class="nav-button">Get Started</div>
+                <div class="nav-button">Products</div>
+                <img id="logo"
+                src="../ourLogo.png"
+                alt="Logo">
+                <div class="nav-button">Donations</div>
+                <div class="nav-button">How it works</div>
+                <div class="nav-button" id="mybtn" onclick="open_modal()">Login</div>
+                <div class="nav-button" id="render-username">test</div>
+                <button class="nav-button" id="btn-logout" onclick="logout()">Logout</button>
             </div>
         </div>
     </div>
 
 
-
-    <!--Testing-->
+    <!--Modal-->
     <div id="myModal" class="modal">
 
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <section class="forms-section">
-                <div class="forms">
-                  <div class="form-wrapper is-active">
-                    <button type="button" class="switcher switcher-login">
-                      Login
-                      <span class="underline"></span>
-                    </button>
-                    <form class="form form-login">
-                      <fieldset>
-                        <legend>Please, enter your email and password for login.</legend>
-                        <div class="input-block">
-                          <label for="login-email">E-mail</label>
-                          <input id="login-email" type="email" required>
+            <!-- Modal content -->
+            
+                    <div id="login-box">
+                            <!--<div id="login-content">
+                            
+                            <input type="text" placeholder="username">
+                            <input type="text" placeholder="password">
+                            <a href="">Dont Have an Account? Sign Up Now!</a> -->
+                        
+            
+                        <span class="close">&times;</span>
+                        <section class="forms-section">
+                            <div class="forms">
+                              <div class="form-wrapper is-active">
+                                <button type="button" class="switcher switcher-login">
+                                  Login
+                                  <span class="underline"></span>
+                                </button>
+                                <form class="form form-login">
+                                  <fieldset>
+                                    <legend>Please, enter your email and password for login.</legend>
+                                    <div class="input-block">
+                                      <label for="login-email">E-mail</label>
+                                      <input id="login-email" type="email" required>
+                                    </div>
+                                    <div class="input-block">
+                                      <label for="login-password">Password</label>
+                                      <input id="login-password" type="password" required>
+                                    </div>
+                                  </fieldset>
+                                  <button type="submit" id="btn-login">Login</button>
+                                </form>
+                              </div>
+                              <div class="form-wrapper">
+                                <button type="button" class="switcher switcher-signup" id="btn-sign">
+                                  Sign Up
+                                  <span class="underline"></span>
+                                </button>
+                                <form class="form form-signup">
+                                  <fieldset>
+                                    <legend>Please, enter your email, password and password confirmation for sign up.</legend>
+                                    <div class="input-block">
+                                      <label for="signup-email">E-mail</label>
+                                      <input id="signup-email" type="email" required>
+                                    </div>
+                                    <div class="input-block">
+                                      <label for="signup-password">Password</label>
+                                      <input id="signup-password" type="password" required>
+                                    </div>
+                                    <div class="input-block">
+                                      <label for="signup-password-confirm">Confirm password</label>
+                                      <input id="signup-password-confirm" type="password" required>
+                                    </div>
+                                  </fieldset>
+                                  <button type="submit" class="btn-signup">Continue</button>
+                                </form>
+                              </div>
+                            </div>
+                          </section>
                         </div>
-                        <div class="input-block">
-                          <label for="login-password">Password</label>
-                          <input id="login-password" type="password" required>
-                        </div>
-                      </fieldset>
-                      <button id="login-button" type="submit" class="btn-login">Login</button>
-                    </form>
-                  </div>
-                  <div class="form-wrapper">
-                    <button type="button" class="switcher switcher-signup">
-                      Sign Up
-                      <span class="underline"></span>
-                    </button>
-                    <form class="form form-signup">
-                      <fieldset>
-                        <legend>Please, enter your email, password and password confirmation for sign up.</legend>
-                        <div class="input-block">
-                          <label for="signup-email">E-mail</label>
-                          <input id="signup-email" type="email" required>
-                        </div>
-                        <div class="input-block">
-                          <label for="signup-password">Password</label>
-                          <input id="signup-password" type="password" required>
-                        </div>
-                        <div class="input-block">
-                          <label for="signup-password-confirm">Confirm password</label>
-                          <input id="signup-password-confirm" type="password" required>
-                        </div>
-                      </fieldset>
-                      <button id="signup-button" type="submit" class="btn-signup">Continue</button>
-                    </form>
-                  </div>
-                </div>
-              </section>
-        </div>
-      
+            
+          
     </div>
+          
+
 
 
 
 
 
     <div id="img-container">
-        <video autoplay muted loop id="myVideo">
+        <div id="text">
+            <h1>Get Ready</h1>
+            <h1>to help donate to Waipahu High School</h1>
+            <h6>try something new..</h6>
+            <a class="waves-effect waves-light btn">donate now</a>
+        </div>
+        <video muted autoplay loop>
             <source src="../Videos/whs_video.mp4" type="video/mp4">
-            Your browser does not support HTML5 video.
-        </video>
-        <!-- <div id="arrows">
-            <button id="arrowLeft" onclick="leftImage()">
-                <</button> <button id="arrowRight" onclick="rightImage()">
-                    >
-            </button>
-        </div> -->
+          </video>
     </div>
 
-
+    <h1 id="header-text">Gratitude Towards Contributors</h1>
     <div class="boxes">
-        <h1 id="header-text">Gratitude Towards Contributors</h1>
         <div class="clipart-images">
             <div class="column">
                 <img class="clipart-image" src="../images/donation_1.jpg">
-                <h2 class="sub-header">Donate</h2>
-                <p> 
+                <h2 class="sub-header">Donate <i class="material-icons left">attach_money</i></h2>
+                <p class="info"> 
                     Bit by Bit Our School Continues to Improve and That is Thanks to the Generous Donations Provided
                     by Sponsors, Partners, Companies and Outstanding Individuals. We Will Continue to Grow, But Not as a 
                     School But as a Community
@@ -156,16 +163,16 @@
             </div>
             <div class="column">
                 <img class="clipart-image" src="../images/volunteer_1.png">
-                <h2 class="sub-header">Volunteer</h2>
-                <p>
+                <h2 class="sub-header">Volunteer <i class="material-icons left">nature_people</i></h2>
+                <p class="info">
                     The Wonderful Volunteers Provide so Much Support and Commarde. 
                     Ranging From Event Contributions, Guest Speakers, Community Service and So Much More.
                 </p>
             </div>
             <div class="column">
                 <img class="clipart-image" src="../images/grow_1.png">
-                <h2 class="sub-header">Grow</h2>
-                <p>
+                <h2 class="sub-header">Grow<i class="material-icons left">terrain</i></h2>
+                <p class="info">
                     We All Grow Together! We Are One Ohana, and we Strive to Become a Fun and Educated Environment
                     For All Students, Parents, Faculty and Guest. We Are Looking Forward to the Continous Growth of
                     Our Community and Contributors.
@@ -247,7 +254,7 @@
                                     class="col s12 grey-text text-lighten-1 light footerContent">
                                     <div class="innerWorkings">
                                         <i class="material-icons left">contact_phone</i>
-                                        <span>(808)221-1571</span>
+                                        <span>(808) 307-9555</span>
                                     </div>
                                 </div>
 
@@ -257,7 +264,7 @@
                                     <div class="innerWorkings">
                                         <i class="material-icons left">
                                             contact_mail</i>
-                                        <span>imshiny808@gmail.com</span>
+                                        <span>waipahu_admin@gmail.com</span>
                                     </div>
                                 </div>
 
@@ -266,7 +273,7 @@
                                     
                                     <div class="innerWorkings">
                                         <i class="material-icons left">home</i>
-                                        <span>12-3456 sample st.</span>
+                                        <span> 94-1211 Farrington Hwy</span>
                                     </div>
 
                                 </div>
