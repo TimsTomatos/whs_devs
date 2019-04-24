@@ -106,15 +106,11 @@ a {
 .imgBox {
     height: 100%;
 }
-/** End of box info **/
-
-
-/** Body Content Stuff **/
 #header-text {
     display:flex;
     justify-content: center;
     margin-bottom:5%;
-    margin-top:15%;
+    margin-top:5%;
 }
 .clipart-images {
     margin-top: 10%;
@@ -146,7 +142,7 @@ a {
 }
 
 .academy {
-    margin-left:20px;   
+    margin-left:20px; 
 }
 
 /** End of Body Content Stuff **/
