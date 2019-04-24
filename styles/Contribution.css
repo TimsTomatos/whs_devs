@@ -32,20 +32,19 @@ body, html, #main
 #navBar > ul > li 
 {
     margin: auto;
-    text-align: center;
+    text-align: right;
 }
 
 .navElem:nth-child(5)
 {
     background: lime;
     padding: 0.43rem 0.25rem;
-    border-radius: 0.5rem;
     color: whitesmoke;
 }
 
 .navElem 
 {
-    text-align: center;
+    text-align: right;
     width: 20%;
 }
 
@@ -59,7 +58,6 @@ body, html, #main
 {
     margin: 0% 3%;
     border: 2px solid black;
-    border-radius: 1rem;
     text-align: left;
 }
 
@@ -73,11 +71,10 @@ body, html, #main
 {
     margin: 2% 2%;
     border: 2px solid black;
-    border-radius: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    text-align: center;
+    text-align: right;
 }
 
 #bottom > h2 
@@ -88,5 +85,5 @@ body, html, #main
 #bottom > h2:not(:last-child)
 {
     padding: 0 1rem;
-    border-right: 1px solid black;
+    border-right:1rem
 }

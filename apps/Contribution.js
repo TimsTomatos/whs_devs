@@ -13,7 +13,7 @@ var render = document.querySelector("#render")
 
 
 
-form.addEventListener("submit", function (e){
+form.addEventListener("submit", function (e) {
     var data = {
         namae: namae.value,
         company: company.value,
@@ -23,8 +23,7 @@ form.addEventListener("submit", function (e){
     };
     console.log(data);
     e.preventDefault();
-    db.collection("partners").add(data).then(function (){
-    });
+    db.collection("partners").add(data).then(function () {});
 });
 
 
@@ -35,8 +34,19 @@ db.collection('partners').onSnapshot(function (snapshot) {
     let changes = snapshot.docChanges();
     let hi = 'hi'
     changes.forEach(function (change) {
-        console.log(change.doc.data().company)
-        render.innerHTML += `
+        console.log(change.doc.data().namae)
+        if (change.doc.data().namae  == "") {
+            render.innerHTML += `
+            <div class="bottom"> 
+                <h2>${change.doc.data().company}</h2>
+                <h2>none</h2>
+                <h2>none</h2>
+                <h2>none</h2>
+                <h2>none</h2>
+            </div>`
+
+        } else {
+            render.innerHTML += `
         <div class="bottom"> 
             <h2>${change.doc.data().company}</h2>
             <h2>${change.doc.data().namae}</h2>
@@ -45,5 +55,6 @@ db.collection('partners').onSnapshot(function (snapshot) {
             <h2>${change.doc.data().donation}</h2>
         </div>
         `
+        }
     })
 })
