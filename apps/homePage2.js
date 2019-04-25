@@ -52,14 +52,13 @@ function leftImage() {
 
 
 
-
-
-//Modal Stuff
+// Modal Stuff
 var modal = document.getElementById('myModal');
-var btn = document.getElementById("myBtn");
+var btn = document.getElementById("mybtn");
 var span = document.getElementsByClassName("close")[0];
 
-function open_modal() {
+
+btn.onclick = function() {
   modal.style.display = "block";
 }
 span.onclick = function() {
@@ -73,7 +72,11 @@ window.onclick = function(event) {
 
 
 
+
+
+// Lpgin Box Switch
 const switchers = [...document.querySelectorAll('.switcher')]
+
 switchers.forEach(item => {
 	item.addEventListener('click', function() {
 		switchers.forEach(item => item.parentElement.classList.remove('is-active'))
@@ -83,28 +86,27 @@ switchers.forEach(item => {
 })
 
 
-
-
-
-
-
-//Login Code
-const user = document.querySelector("#login-email");
-const pass = document.querySelector("#login-password");
+// Authetication Stuff
+// Sign Up Variables
+const user = document.querySelector("#user");
+const pass = document.querySelector("#pass");
 const form = document.querySelector("#form");
+const signup_button = document.querySelector("#btn-sign");
+
 
 // Login Up Variables
 const log_in = document.querySelector("#logIn");
 const user_login = document.querySelector("#login-email");
 const pass_login = document.querySelector("#login-password");
-
+const login_button = document.querySelector("#btn-login")
 var render_username = document.querySelector("#render-username"); 
 
-var btn_sign = document.querySelector("#btn-sign");
-var btn_login = document.querySelector("#btn-login")
-var btn_logout = document.querySelector("#btn-logout")
+
+//Logout Button
+const logout_button = document.querySelector("#btn-logout");
+
 // Sign Up Functions 
-btn_login.addEventListener('click', function(parm) {
+signup_button.addEventListener('submit', function(parm) {
     parm.preventDefault(); // Prevents Page Form refreshing
     console.log("Neato Libudi")
     var user_value = user.value;
@@ -120,8 +122,9 @@ auth.onAuthStateChanged(function(user) { // Checks if they are signed in or sign
     if (user)
     {
         console.log("Logged in");
+        logout_button.style.display = "block";
+        render_username.style.display = "block";
         render_username.innerHTML = user.email;
-        //btn_logout.style.display = block;
     }
     else 
     {
@@ -131,7 +134,7 @@ auth.onAuthStateChanged(function(user) { // Checks if they are signed in or sign
 
 
 // Login Stuff Functions
-sign.addEventListener('submit', function(parm) {
+login_button.addEventListener('click', function(parm) {
     parm.preventDefault();
     
     var username_value = user_login.value;
@@ -147,13 +150,20 @@ sign.addEventListener('submit', function(parm) {
         console.log("Login Successful")
     })
 })
+login_button.onclick = function() {
+    modal.style.display = "none";
+  }
+
 
 // logout
-function logout() {
+logout_button.addEventListener('click', function () {
     auth.signOut()
     .then(function() {
         console.log("logged out")
-        render_username.innerHTML = null;
+        logout_button.style.display = "none";
+        render_username.innerHTML = "";
+        render_username.style.display = "none";
     })
 
-}
+})
+
