@@ -6,23 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="../styles/Contribution.css">
     <title>Contribution Page</title>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="../styles/homePage2.css">
 </head>
 <body>
 
-    <div id = "main">
-        <header id="navBar">
+    <div id="top">
+        <div id="top-bar">
 
-            <h1 id="Logo"> WHS DEVS </h1>
-                    
-            <ul>
-                <li class="navElem">Events </li>
-                <li class="navElem">How it Works </li>
-                <li class="navElem">Customers </li>
-                <li class="navElem">About </li>
-                <li class="navElem" id="navLoginElem">Login</li>
-            </ul>
-        
-        </header>
+            <div id="nav-bar">
+
+                <ul id="slide-out" class="sidenav">
+                    <li>
+                        <div class="user-view">
+                            <div class="background">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="divider"></div>
+                    </li>
+                    <li><a class="subheader">Arts & Communication</a></li>
+                    <li><a class="waves-effect academy" href="#!">Academy of Creative Media</a></li>
+                    <li><a class="subheader">Academy of Natural Resources</a></li>
+                    <li><a class="waves-effect academy" href="#!">Academy of Environment Resource</a></li>
+                    <li><a class="subheader">Industrial & Engineering Technology</a></li>
+                    <li><a class="waves-effect academy" href="#!">Academy of Engineering</a></li>
+                    <li><a class="waves-effect academy" href="#!">Academy of Information & Technology</a></li>
+                    <li><a class="subheader" href="#!">Professional and Public Service</a></li>
+                    <li><a class="waves-effect academy" href="#!">Academy of Culinary Arts</a></li>
+                    <li><a class="waves-effect academy" href="#!">Academy of Finance</a></li>
+                    <li><a class="waves-effect academy" href="#!">Academy of Health and Science</a></li>
+                    <li><a class="waves-effect academy" href="#!">Academy of Health</a></li>
+                </ul>
+                <a href="#" data-target="slide-out" class="sidenav-trigger waves-effect waves-light btn"><i
+                        class="material-icons">menu</i></a>
+                <div class="nav-button">menu</div>
+                <div class="nav-button">Get Started</div>
+                <div class="nav-button">Products</div>
+                <img id="logo"
+                src="../ourLogo.png"
+                alt="Logo">
+                <div class="nav-button">Donations</div>
+                <div class="nav-button">How it works</div>
+                <div class="nav-button" id="mybtn" onclick="open_modal()">Login</div>
+                <div class="nav-button" id="render-username">test</div>
+                <button class="nav-button" id="btn-logout" onclick="logout()">Logout</button>
+            </div>
+        </div>
+    </div>
         
         <div id="mid">
             <h1> Contributions </h1>
