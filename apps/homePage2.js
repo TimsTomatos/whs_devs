@@ -102,7 +102,7 @@ const login_button = document.querySelector("#btn-login")
 var render_username = document.querySelector("#render-username"); 
 
 
-//Logout Button
+//Logout Button 
 const logout_button = document.querySelector("#btn-logout");
 
 // Sign Up Functions 
