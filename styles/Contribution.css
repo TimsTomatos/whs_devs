@@ -64,7 +64,9 @@ html,
 /** Bottom Portion **/
 
 #infoContainer {
-    margin: 5px;
+    margin-top:3%;
+    margin-left:2%;
+    margin-right:2%;
 }
 
 #topRow {
