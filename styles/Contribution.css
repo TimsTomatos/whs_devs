@@ -48,10 +48,7 @@ body, html, #main
     width: 20%;
 }
 
-#logo
-{
-   
-}
+
 
 /** Middle Portion **/
 #mid
@@ -61,20 +58,35 @@ body, html, #main
     text-align: left;
 }
 
-#mid > h1 
-{
-
-}
 
 /** Bottom Portion **/
+
+#infoContainer {
+    margin:5px;
+}
+
+#topRow {
+    font-weight:600;
+    color:#808080;
+    border-top: 1px solid black;
+}
+
 .bottom
-{
-    margin: 2% 2%;
-    border: 2px solid black;
+{    
+    padding-left:2%;
+    width:100%;
+    border-bottom: 1px solid black;
+    border-left:1px solid black;
+    border-right:1px solid black;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     text-align: right;
+}
+
+.col {
+    text-align: left;
+    width:20%;
 }
 
 #bottom > h2 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,8 +15,9 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="../styles/homePage2.css">
+    <link rel="stylesheet" href="../styles/navBar.css">
 </head>
+
 <body>
 
     <div id="top">
@@ -51,9 +53,7 @@
                 <div class="nav-button">menu</div>
                 <div class="nav-button">Get Started</div>
                 <div class="nav-button">Products</div>
-                <img id="logo"
-                src="../ourLogo.png"
-                alt="Logo">
+                <img id="logo" src="../ourLogo.png" alt="Logo">
                 <div class="nav-button">Donations</div>
                 <div class="nav-button">How it works</div>
                 <div class="nav-button" id="mybtn" onclick="open_modal()">Login</div>
@@ -62,36 +62,26 @@
             </div>
         </div>
     </div>
-        
-               <!--Testing-->
-               <form id="form">
-                <input type="text" id="nam" placeholder="name">
-                <input type="text" id="company1" placeholder="company">
-                <input type="text" id="support1" placeholder="support">
-                <input type="text" id="hours1" placeholder="hours">
-                <input type="text" id="donation1" placeholder="donation">
-                <button>Submit</button>
-            </form>
-        
-        <!-- 
+
+    <!--Testing-->
+
+
+    <!-- 
             You probably have to integrate this into JS,
             so it can duplicate and fill in correct info.
             Good Luck!
         -->
-        <div class="bottom">
-            <h2 id="name">Example Name</h2>
-            <h2 id="company">Example Company</h2>
-            <h2 id="support">Academy/pathway supported</h2>
-            <h2 id="hours">Hours Spent</h2>
-            <h2 id="donation">Donation Amount</h2>
+
+    <div id="infoContainer">
+        <div id="topRow" class="bottom">
+            <p class="col" id="name">Name</p>
+            <p class="col" class="col" id="company">Company</p>
+            <p class="col" id="support">Academy/pathway supported</p>
+            <p class="col" id="hours">Hours Spent</p>
+            <p class="col" id="donation">Donation Amount</p>
         </div>
-        
-
-
-
-
         <div id="render"></div>
-
+    </div>
 
 
 
@@ -99,25 +89,33 @@
 
     </div>
 
-   
 
+    <form id="form">
+        <input type="text" id="nam" placeholder="name">
+        <input type="text" id="company1" placeholder="company">
+        <input type="text" id="support1" placeholder="support">
+        <input type="text" id="hours1" placeholder="hours">
+        <input type="text" id="donation1" placeholder="donation">
+        <button>Submit</button>
+    </form>
 </body>
 
 
 <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
 <script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyAVGq1K_E0Fkzo1DDHch_uS-2_hkfDa1q8",
-    authDomain: "whs-devs.firebaseapp.com",
-    databaseURL: "https://whs-devs.firebaseio.com",
-    projectId: "whs-devs",
-    storageBucket: "whs-devs.appspot.com",
-    messagingSenderId: "978939713269"
-  };
-  firebase.initializeApp(config);
-  const auth = firebase.auth();
-  const db = firebase.firestore();
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyAVGq1K_E0Fkzo1DDHch_uS-2_hkfDa1q8",
+        authDomain: "whs-devs.firebaseapp.com",
+        databaseURL: "https://whs-devs.firebaseio.com",
+        projectId: "whs-devs",
+        storageBucket: "whs-devs.appspot.com",
+        messagingSenderId: "978939713269"
+    };
+    firebase.initializeApp(config);
+    const auth = firebase.auth();
+    const db = firebase.firestore();
 </script>
 <script src="../apps/Contribution.js"></script>
+
 </html>

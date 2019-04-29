@@ -38,21 +38,21 @@ db.collection('partners').onSnapshot(function (snapshot) {
         if (change.doc.data().namae  == "") {
             render.innerHTML += `
             <div class="bottom"> 
-                <h2>${change.doc.data().company}</h2>
-                <h2>none</h2>
-                <h2>none</h2>
-                <h2>none</h2>
-                <h2>none</h2>
+                <p class="col" >${change.doc.data().company}</p>
+                <p class="col" >none</p>
+                <p class="col" >none</p>
+                <p class="col" >none</p>
+                <p class="col" >none</p>
             </div>`
 
         } else {
             render.innerHTML += `
         <div class="bottom"> 
-            <h2>${change.doc.data().company}</h2>
-            <h2>${change.doc.data().namae}</h2>
-            <h2>${change.doc.data().hours}</h2>
-            <h2>${change.doc.data().support}</h2>
-            <h2>${change.doc.data().donation}</h2>
+            <p class="col" >${change.doc.data().company}</p>
+            <p class="col" >${change.doc.data().namae}</p>
+            <p class="col" >${change.doc.data().hours}</p>
+            <p class="col" >${change.doc.data().support}</p>
+            <p class="col" >${change.doc.data().donation}</p>
         </div>
         `
         }
