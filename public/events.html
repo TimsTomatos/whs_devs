@@ -1,276 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--Testing -->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="../styles/events.css">
-    <title>HomePage 2.0</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="../styles/events.css">
+  <title>HomePage 2.0</title>
 </head>
 
 <body>
-    <div id="top">
-        <div id="top-bar">
+  <div id="top">
+    <div id="top-bar">
 
-            <div id="nav-bar">
+      <div id="nav-bar">
 
-                <ul id="slide-out" class="sidenav">
-                    <li>
-                        <div class="user-view">
-                            <div class="background">
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="divider"></div>
-                    </li>
-                    <li><a class="subheader">Arts & Communication</a></li>
-                    <li><a class="waves-effect academy" href="#!">Academy of Creative Media</a></li>
-                    <li><a class="subheader">Academy of Natural Resources</a></li>
-                    <li><a class="waves-effect academy" href="#!">Academy of Environment Resource</a></li>
-                    <li><a class="subheader">Industrial & Engineering Technology</a></li>
-                    <li><a class="waves-effect academy" href="#!">Academy of Engineering</a></li>
-                    <li><a class="waves-effect academy" href="#!">Academy of Information & Technology</a></li>
-                    <li><a class="subheader" href="#!">Professional and Public Service</a></li>
-                    <li><a class="waves-effect academy" href="#!">Academy of Culinary Arts</a></li>
-                    <li><a class="waves-effect academy" href="#!">Academy of Finance</a></li>
-                    <li><a class="waves-effect academy" href="#!">Academy of Health and Science</a></li>
-                    <li><a class="waves-effect academy" href="#!">Academy of Health</a></li>
-                </ul>
-                <a href="#" data-target="slide-out" class="sidenav-trigger waves-effect waves-light btn"><i
-                        class="material-icons">menu</i></a>
-                <div class="nav-button">menu</div>
-                <div class="nav-button">Get Started</div>
-                <div class="nav-button">Products</div>
-                <img id="logo"
-                src="../ourLogo.png"
-                alt="Logo">
-                <div class="nav-button">Donations</div>
-                <div class="nav-button">How it works</div>
-                <div class="nav-button" id="mybtn" onclick="open_modal()">Login</div>
-                <div class="nav-button" id="render-username">test</div>
-                <button class="nav-button" id="btn-logout" onclick="logout()">Logout</button>
+        <ul id="slide-out" class="sidenav">
+          <li>
+            <div class="user-view">
+              <div class="background">
+              </div>
             </div>
-        </div>
+          </li>
+          <li>
+            <div class="divider"></div>
+          </li>
+          <li><a class="subheader">Arts & Communication</a></li>
+          <li><a class="waves-effect academy" href="#!">Academy of Creative Media</a></li>
+          <li><a class="subheader">Academy of Natural Resources</a></li>
+          <li><a class="waves-effect academy" href="#!">Academy of Environment Resource</a></li>
+          <li><a class="subheader">Industrial & Engineering Technology</a></li>
+          <li><a class="waves-effect academy" href="#!">Academy of Engineering</a></li>
+          <li><a class="waves-effect academy" href="#!">Academy of Information & Technology</a></li>
+          <li><a class="subheader" href="#!">Professional and Public Service</a></li>
+          <li><a class="waves-effect academy" href="#!">Academy of Culinary Arts</a></li>
+          <li><a class="waves-effect academy" href="#!">Academy of Finance</a></li>
+          <li><a class="waves-effect academy" href="#!">Academy of Health and Science</a></li>
+          <li><a class="waves-effect academy" href="#!">Academy of Health</a></li>
+        </ul>
+        <a href="#" data-target="slide-out" class="sidenav-trigger waves-effect waves-light btn"><i
+            class="material-icons">menu</i></a>
+        <div class="nav-button">menu</div>
+        <div class="nav-button">Get Started</div>
+        <div class="nav-button">Products</div>
+        <img id="logo" src="../ourLogo.png" alt="Logo">
+        <div class="nav-button">Donations</div>
+        <div class="nav-button">How it works</div>
+        <div class="nav-button" id="mybtn" onclick="open_modal()">Login</div>
+        <div class="nav-button" id="render-username">test</div>
+        <button class="nav-button" id="btn-logout" onclick="logout()">Logout</button>
+      </div>
     </div>
+  </div>
 
 
-    <!--Modal-->
-    <div id="myModal" class="modal">
+  <!--Modal-->
+  <div id="myModal" class="modal">
 
-            <!-- Modal content -->
-            
-                    <div id="login-box">
-                            <!--<div id="login-content">
+    <!-- Modal content -->
+
+    <div id="login-box">
+      <!--<div id="login-content">
                             
                             <input type="text" placeholder="username">
                             <input type="text" placeholder="password">
                             <a href="">Dont Have an Account? Sign Up Now!</a> -->
-                        
-            
-                        <span class="close">&times;</span>
-                        <section class="forms-section">
-                            <div class="forms">
-                              <div class="form-wrapper is-active">
-                                <button type="button" class="switcher switcher-login">
-                                  Login
-                                  <span class="underline"></span>
-                                </button>
-                                <form class="form form-login">
-                                  <fieldset>
-                                    <legend>Please, enter your email and password for login.</legend>
-                                    <div class="input-block">
-                                      <label for="login-email">E-mail</label>
-                                      <input id="login-email" type="email" required>
-                                    </div>
-                                    <div class="input-block">
-                                      <label for="login-password">Password</label>
-                                      <input id="login-password" type="password" required>
-                                    </div>
-                                  </fieldset>
-                                  <button type="submit" id="btn-login">Login</button>
-                                </form>
-                              </div>
-                              <div class="form-wrapper">
-                                <button type="button" class="switcher switcher-signup" id="btn-sign">
-                                  Sign Up
-                                  <span class="underline"></span>
-                                </button>
-                                <form class="form form-signup">
-                                  <fieldset>
-                                    <legend>Please, enter your email, password and password confirmation for sign up.</legend>
-                                    <div class="input-block">
-                                      <label for="signup-email">E-mail</label>
-                                      <input id="signup-email" type="email" required>
-                                    </div>
-                                    <div class="input-block">
-                                      <label for="signup-password">Password</label>
-                                      <input id="signup-password" type="password" required>
-                                    </div>
-                                    <div class="input-block">
-                                      <label for="signup-password-confirm">Confirm password</label>
-                                      <input id="signup-password-confirm" type="password" required>
-                                    </div>
-                                  </fieldset>
-                                  <button type="submit" class="btn-signup">Continue</button>
-                                </form>
-                              </div>
-                            </div>
-                          </section>
-                        </div>
-            
-          
-    </div>
-          
-
-    <!-- Events Area-->
-    <div id="events-area">
 
 
-    </div>
-
-
-
-    <div class="page-footer">
-
-        <div class="container footerContainer">
-            <!--Main Container it is in-->
-
-            <div class="row footerRow verticalDivider">
-                <!--the general row it is in-->
-
-                <div class="col s12 m4 hide-on-small-only column">
-                    <!--Column 1~Image-->
-                    <img id="footerImg" src="../ourLogo.png" alt="A flat illistrated rndom">
-
+      <span class="close">&times;</span>
+      <section class="forms-section">
+        <div class="forms">
+          <div class="form-wrapper is-active">
+            <button type="button" class="switcher switcher-login">
+              Login
+              <span class="underline"></span>
+            </button>
+            <form class="form form-login">
+              <fieldset>
+                <legend>Please, enter your email and password for login.</legend>
+                <div class="input-block">
+                  <label for="login-email">E-mail</label>
+                  <input id="login-email" type="email" required>
                 </div>
-
-                <div class="col s12 m4 column">
-                    <!--Column 2~Links-->
-
-                    <div id="specialChild" class="row footerRow">
-                        <!--Level 1 of a inner Row-->
-
-                        <div class="col s12 grey-text text-lighten-1 light">
-                            <h6 class="footerSubHeader">
-                                Links
-                            </h6>
-                        </div>
-
-                        <div class="col s12">
-
-                            <div class="row footerRow">
-                                <!--Level 2 of a inner Row-->
-
-                                <a href="https://www.waipahuhigh.org/" target="_blank"
-                                    class="col s12 grey-text text-lighten-1 light footerContent"> Waipahu High School </a>
-                                <a href="https://www.friendsofwaipahuhighschool.com/" target="_blank"
-                                    class="col s12 grey-text text-lighten-1 light footerContent"> Friends Of Waipahu </a>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
+                <div class="input-block">
+                  <label for="login-password">Password</label>
+                  <input id="login-password" type="password" required>
                 </div>
-
-                <div class="col s12 m4 column">
-                    <!--Column 2~Links-->
-
-                    <div class="row footerRow">
-                        <!--Level 1 of a inner Row-->
-
-                        <div class="col s12 grey-text text-lighten-1 light">
-                            <h6 class="footerSubHeader">
-                                Contact
-                            </h6>
-                        </div>
-
-                        <div class="col s12">
-
-                            <div class="row footerRow">
-                                <!--Level 2 of a inner Row-->
-
-                                <div href="../html/article.html"
-                                    class="col s12 grey-text text-lighten-1 light footerContent">
-                                    <div class="innerWorkings">
-                                        <i class="material-icons left">contact_phone</i>
-                                        <span>(808) 307-9555</span>
-                                    </div>
-                                </div>
-
-                                <div href="../html/article.html"
-                                    class="col s12 grey-text text-lighten-1 light footerContent">
-
-                                    <div class="innerWorkings">
-                                        <i class="material-icons left">
-                                            contact_mail</i>
-                                        <span>waipahu_admin@gmail.com</span>
-                                    </div>
-                                </div>
-
-                                <div href="../html/article.html"
-                                    class="col s12 grey-text text-lighten-1 light footerContent">
-                                    
-                                    <div class="innerWorkings">
-                                        <i class="material-icons left">home</i>
-                                        <span> 94-1211 Farrington Hwy</span>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
+              </fieldset>
+              <button type="submit" id="btn-login">Login</button>
+            </form>
+          </div>
+          <div class="form-wrapper">
+            <button type="button" class="switcher switcher-signup" id="btn-sign">
+              Sign Up
+              <span class="underline"></span>
+            </button>
+            <form class="form form-signup">
+              <fieldset>
+                <legend>Please, enter your email, password and password confirmation for sign up.</legend>
+                <div class="input-block">
+                  <label for="signup-email">E-mail</label>
+                  <input id="signup-email" type="email" required>
                 </div>
-            </div>
+                <div class="input-block">
+                  <label for="signup-password">Password</label>
+                  <input id="signup-password" type="password" required>
+                </div>
+                <div class="input-block">
+                  <label for="signup-password-confirm">Confirm password</label>
+                  <input id="signup-password-confirm" type="password" required>
+                </div>
+              </fieldset>
+              <button type="submit" class="btn-signup">Continue</button>
+            </form>
+          </div>
         </div>
+      </section>
     </div>
 
-<!-- Code injected by live-server -->
-<script type="text/javascript">
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function() {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					head.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					head.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function(msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			console.log('Live reload enabled.');
-		})();
-	}
-	// ]]>
-</script>
+
+  </div>
+
+
+  <!-- Events Area-->
+  <div id="events-area">
+
+    <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="../images/image2.jpg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Despacito 1<i
+            class="material-icons right">more_vert</i></span>
+        <p><a href="https://www.youtube.com/watch?v=whwe0KD_rGw" target="_blank">Music</a></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Despacito 1<i class="material-icons right">close</i></span>
+        <p>Ay 
+            Fonsi 
+            DY 
+            Oh
+            Oh no, oh no
+            Oh yeah
+            Diridiri, dirididi Daddy 
+            Go
+            Sí, sabes que ya llevo un rato mirándote 
+            Tengo que bailar contigo hoy (DY) 
+            Vi que tu mirada ya estaba llamándome 
+            Muéstrame el camino que yo voy (Oh)
+            Tú, tú eres el imán y yo soy el metal 
+            Me voy acercando y voy armando el plan 
+            Solo con pensarlo se acelera el pulso (Oh yeah)
+            Ya, ya me está gustando más de lo normal 
+            Todos mis sentidos van pidiendo más 
+            Esto hay que tomarlo sin ningún apuro
+            Despacito 
+            Quiero respirar tu cuello despacito 
+            Deja que te diga cosas al oído 
+            Para que te acuerdes si no estás conmigo
+            Despacito 
+            Quiero desnudarte a besos despacito 
+            Firmo en las paredes de tu laberinto 
+            Y hacer de tu cuerpo todo un manuscrito (sube, sube, sube)
+            (Sube, sube)
+            Quiero ver bailar tu pelo 
+            Quiero ser tu ritmo 
+            Que le enseñes a mi boca 
+            Tus lugares favoritos (favoritos, favoritos baby)
+            Déjame sobrepasar tus zonas de peligro 
+            Hasta provocar tus gritos 
+            Y que olvides tu apellido (Diridiri, dirididi Daddy)
+            Si te pido un beso ven dámelo 
+            Yo sé que estás pensándolo 
+            Llevo tiempo intentándolo 
+            Mami, esto es dando y dándolo 
+            Sabes que tu corazón conmigo te hace bom, bom 
+            Sabes que esa beba está buscando de mi bom, bom 
+            Ven prueba de mi boca para ver cómo te sabe 
+            Quiero, quiero, quiero ver cuánto amor a ti te cabe 
+            Yo no tengo prisa, yo me quiero dar el viaje 
+            Empecemos lento, después salvaje
+            Pasito a pasito, suave suavecito 
+            Nos vamos pegando poquito a poquito 
+            Cuando tú me besas con esa destreza 
+            Veo que eres malicia con delicadeza
+            Pasito a pasito, suave suavecito 
+            Nos vamos pegando, poquito a poquito 
+            Y es que esa belleza es un rompecabezas 
+            Pero pa montarlo aquí tengo la pieza
+            Despacito 
+            Quiero respirar tu cuello despacito 
+            Deja que te diga cosas al oído 
+            Para que te acuerdes si no estás conmigo
+            Despacito 
+            Quiero desnudarte a besos despacito 
+            Firmo en las paredes de tu laberinto 
+            Y hacer de tu cuerpo todo un manuscrito (sube, sube, sube)
+            (Sube, sube)
+            Quiero ver bailar tu pelo 
+            Quiero ser tu ritmo 
+            Que le enseñes a mi boca 
+            Tus lugares favoritos (favoritos, favoritos baby)
+            Déjame sobrepasar tus zonas de peligro 
+            Hasta provocar tus gritos 
+            Y que olvides tu apellido
+            Despacito 
+            Vamos a hacerlo en una playa en Puerto Rico 
+            Hasta que las olas griten "¡ay, bendito!" 
+            Para que mi sello se quede contigo
+            Pasito a pasito, suave suavecito 
+            Nos vamos pegando, poquito a poquito 
+            Que le enseñes a mi boca 
+            Tus lugares favoritos (favoritos, favoritos baby)
+            Pasito a pasito, suave suavecito 
+            Nos vamos pegando, poquito a poquito 
+            Hasta provocar tus gritos 
+            Y que olvides tu apellido (DY)
+            Despacito.</p>
+      </div>
+    </div>
+
+    <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="../images/image2.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Despacito 2<i
+              class="material-icons right">more_vert</i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+        </div>
+      </div>
+
+      <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="../images/image2.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Despacito 3<i
+                class="material-icons right">more_vert</i></span>
+            <p><a href="#">This is a link</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="../images/image2.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">Despacito 4<i
+                  class="material-icons right">more_vert</i></span>
+              <p><a href="#">This is a link</a></p>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+            </div>
+          </div>
+
+          <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="../images/image2.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Despacito 5<i
+                    class="material-icons right">more_vert</i></span>
+                <p><a href="#">This is a link</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+              </div>
+            </div>
+
+  </div>
+
+
+
+  <div class="page-footer">
+
+    <div class="container footerContainer">
+      <!--Main Container it is in-->
+
+      <div class="row footerRow verticalDivider">
+        <!--the general row it is in-->
+
+        <div class="col s12 m4 hide-on-small-only column">
+          <!--Column 1~Image-->
+          <img id="footerImg" src="../ourLogo.png" alt="A flat illistrated rndom">
+
+        </div>
+
+        <div class="col s12 m4 column">
+          <!--Column 2~Links-->
+
+          <div id="specialChild" class="row footerRow">
+            <!--Level 1 of a inner Row-->
+
+            <div class="col s12 grey-text text-lighten-1 light">
+              <h6 class="footerSubHeader">
+                Links
+              </h6>
+            </div>
+
+            <div class="col s12">
+
+              <div class="row footerRow">
+                <!--Level 2 of a inner Row-->
+
+                <a href="https://www.waipahuhigh.org/" target="_blank"
+                  class="col s12 grey-text text-lighten-1 light footerContent"> Waipahu High School </a>
+                <a href="https://www.friendsofwaipahuhighschool.com/" target="_blank"
+                  class="col s12 grey-text text-lighten-1 light footerContent"> Friends Of Waipahu </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col s12 m4 column">
+          <!--Column 2~Links-->
+
+          <div class="row footerRow">
+            <!--Level 1 of a inner Row-->
+
+            <div class="col s12 grey-text text-lighten-1 light">
+              <h6 class="footerSubHeader">
+                Contact
+              </h6>
+            </div>
+
+            <div class="col s12">
+
+              <div class="row footerRow">
+                <!--Level 2 of a inner Row-->
+
+                <div href="../html/article.html" class="col s12 grey-text text-lighten-1 light footerContent">
+                  <div class="innerWorkings">
+                    <i class="material-icons left">contact_phone</i>
+                    <span>(808) 307-9555</span>
+                  </div>
+                </div>
+
+                <div href="../html/article.html" class="col s12 grey-text text-lighten-1 light footerContent">
+
+                  <div class="innerWorkings">
+                    <i class="material-icons left">
+                      contact_mail</i>
+                    <span>waipahu_admin@gmail.com</span>
+                  </div>
+                </div>
+
+                <div href="../html/article.html" class="col s12 grey-text text-lighten-1 light footerContent">
+
+                  <div class="innerWorkings">
+                    <i class="material-icons left">home</i>
+                    <span> 94-1211 Farrington Hwy</span>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Code injected by live-server -->
+  <script type="text/javascript">
+    // <![CDATA[  <-- For SVG support
+    if ('WebSocket' in window) {
+      (function () {
+        function refreshCSS() {
+          var sheets = [].slice.call(document.getElementsByTagName("link"));
+          var head = document.getElementsByTagName("head")[0];
+          for (var i = 0; i < sheets.length; ++i) {
+            var elem = sheets[i];
+            head.removeChild(elem);
+            var rel = elem.rel;
+            if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+              var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+              elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+            }
+            head.appendChild(elem);
+          }
+        }
+        var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+        var address = protocol + window.location.host + window.location.pathname + '/ws';
+        var socket = new WebSocket(address);
+        socket.onmessage = function (msg) {
+          if (msg.data == 'reload') window.location.reload();
+          else if (msg.data == 'refreshcss') refreshCSS();
+        };
+        console.log('Live reload enabled.');
+      })();
+    }
+    // ]]>
+  </script>
 </body>
 <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
 <script>
