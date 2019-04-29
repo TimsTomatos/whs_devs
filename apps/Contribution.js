@@ -29,11 +29,20 @@ form.addEventListener("submit", function (e) {
 
 
 
-
+var count = 1
 db.collection('partners').onSnapshot(function (snapshot) {
+    console.log(count)
     let changes = snapshot.docChanges();
     let hi = 'hi'
     changes.forEach(function (change) {
+        count++
+        console.log(count)
+
+
+
+
+
+
         console.log(change.doc.data().namae)
         if (change.doc.data().namae  == "") {
             render.innerHTML += `
@@ -56,7 +65,10 @@ db.collection('partners').onSnapshot(function (snapshot) {
         </div>
         `
         }
+
+
     })
+
 })
 
   // Or with jQuery
