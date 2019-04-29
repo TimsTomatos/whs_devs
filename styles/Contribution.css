@@ -1,5 +1,6 @@
-body, html, #main
-{
+body,
+html,
+#main {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -8,18 +9,21 @@ body, html, #main
     font-family: 'Open Sans', sans-serif;
 }
 
- /** Nav Bar **/
-#navBar 
-{
+/** Nav Bar **/
+#navBar {
     height: 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     color: black;
 }
+#addForm {
+    position:absolute;
+    right:5%;
+    bottom:5%;
+}
 
-#navBar > ul 
-{
+#navBar>ul {
     display: flex;
     width: 50%;
     height: 100%;
@@ -29,21 +33,20 @@ body, html, #main
     list-style: none;
 }
 
-#navBar > ul > li 
-{
+#navBar>ul>li {
     margin: auto;
     text-align: right;
 }
 
-.navElem:nth-child(5)
-{
+
+
+.navElem:nth-child(5) {
     background: lime;
     padding: 0.43rem 0.25rem;
     color: whitesmoke;
 }
 
-.navElem 
-{
+.navElem {
     text-align: right;
     width: 20%;
 }
@@ -51,8 +54,7 @@ body, html, #main
 
 
 /** Middle Portion **/
-#mid
-{
+#mid {
     margin: 0% 3%;
     border: 2px solid black;
     text-align: left;
@@ -62,40 +64,41 @@ body, html, #main
 /** Bottom Portion **/
 
 #infoContainer {
-    margin:5px;
+    margin: 5px;
 }
 
 #topRow {
-    font-weight:600;
-    color:#808080;
+    font-weight: 600;
+    color: #808080;
     border-top: 1px solid black;
 }
 
-.bottom
-{    
-    padding-left:2%;
-    width:100%;
+.bottom {
+    padding-left: 2%;
+    width: 100%;
     border-bottom: 1px solid black;
-    border-left:1px solid black;
-    border-right:1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     text-align: right;
 }
 
+.bottom:hover {
+    background-color: rgba(211, 211, 211, 0.3);
+}
+
 .col {
     text-align: left;
-    width:20%;
+    width: 20%;
 }
 
-#bottom > h2 
-{
+#bottom>h2 {
     padding: 0 1rem;
 }
 
-#bottom > h2:not(:last-child)
-{
+#bottom>h2:not(:last-child) {
     padding: 0 1rem;
-    border-right:1rem
+    border-right: 1rem
 }

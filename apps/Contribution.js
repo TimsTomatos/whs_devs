@@ -58,3 +58,9 @@ db.collection('partners').onSnapshot(function (snapshot) {
         }
     })
 })
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
