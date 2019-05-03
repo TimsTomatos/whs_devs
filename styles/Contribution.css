@@ -1,5 +1,6 @@
-body, html, #main
-{
+body,
+html,
+#main {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -8,18 +9,21 @@ body, html, #main
     font-family: 'Open Sans', sans-serif;
 }
 
- /** Nav Bar **/
-#navBar 
-{
+/** Nav Bar **/
+#navBar {
     height: 10%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     color: black;
 }
+#addForm {
+    position:absolute;
+    right:5%;
+    bottom:5%;
+}
 
-#navBar > ul 
-{
+#navBar>ul {
     display: flex;
     width: 50%;
     height: 100%;
@@ -29,64 +33,74 @@ body, html, #main
     list-style: none;
 }
 
-#navBar > ul > li 
-{
+#navBar>ul>li {
     margin: auto;
-    text-align: center;
+    text-align: right;
 }
 
-.navElem:nth-child(5)
-{
+
+
+.navElem:nth-child(5) {
     background: lime;
     padding: 0.43rem 0.25rem;
-    border-radius: 0.5rem;
     color: whitesmoke;
 }
 
-.navElem 
-{
-    text-align: center;
+.navElem {
+    text-align: right;
     width: 20%;
 }
 
-#logo
-{
-   
-}
+
 
 /** Middle Portion **/
-#mid
-{
+#mid {
     margin: 0% 3%;
     border: 2px solid black;
-    border-radius: 1rem;
     text-align: left;
 }
 
-#mid > h1 
-{
-
-}
 
 /** Bottom Portion **/
-.bottom
-{
-    margin: 2% 2%;
-    border: 2px solid black;
-    border-radius: 2rem;
+
+#infoContainer {
+    margin-top:3%;
+    margin-left:2%;
+    margin-right:2%;
+}
+
+#topRow {
+    font-weight: 600;
+    color: #808080;
+    border-top: 1px solid black;
+}
+
+.bottom {
+    padding-left: 2%;
+    width: 100%;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    text-align: center;
+    text-align: right;
 }
 
-#bottom > h2 
-{
+.bottom:hover {
+    background-color: rgba(211, 211, 211, 0.3);
+}
+
+.col {
+    text-align: left;
+    width: 20%;
+}
+
+#bottom>h2 {
     padding: 0 1rem;
 }
 
-#bottom > h2:not(:last-child)
-{
+#bottom>h2:not(:last-child) {
     padding: 0 1rem;
-    border-right: 1px solid black;
+    border-right: 1rem
 }
