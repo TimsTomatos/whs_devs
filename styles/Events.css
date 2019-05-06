@@ -9,7 +9,7 @@ body, html, #main {
 /** Start of Top section **/
 #top {
     width: 100%;
-    height: 8%;
+    height: 10%;
     display: flex;
 	justify-content: center;
 }
@@ -40,114 +40,110 @@ body, html, #main {
 }
 /** End of top section **/
 
-/** start of Image/video area **/
-#text {
-    width:30%;
-    color:white;
-    position:absolute;
-    top:40%;
-    left:20%;
-}
-#img-container
-{
-    margin-top:1%;
-}
-video {
-	width:100%;
-	
-}
-#arrows
-{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+
+/** Start of events **/
+#events {
+	font-size: 2.92rem;
+	line-height: 110%;
+	margin-left: 3%;
 }
 
-#arrowRight
-{
-    padding: 0 1rem;
-    background: rgba(0,0,0,0.3);
-    border: none;
-    font-size: 2em;
-    color: whitesmoke;
+#events-area {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
-#arrowLeft
-{
-    padding: 0 1rem;
-    background: rgba(0,0,0,0.3);
-    border: none;
-    font-size: 2em;
-    color: whitesmoke;
-}
-/** End of image/video area **/
+.card {
+	max-width: 30%;
+	max-height: 50%;
 
-/** Start of box info**/
-.boxes
-{
-    position: relative;
-    display: flex; 
-    justify-content: center;
-    width: 100%;
-    margin-bottom:10%
 }
 
-a {
-    padding-bottom: 5%;
-}
 
-.textBox {
-    height: 100%;
-}
+/** End of events **/
 
-.imgBox {
-    height: 100%;
-}
-#header-text {
-    display:flex;
-    justify-content: center;
-    margin-bottom:5%;
-    margin-top:5%;
-}
-.clipart-images {
-    margin-top: 10%;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    position: relative;
-}
-.clipart-image {
-    max-height: 200px;
-}
-.column {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 250px;
-    word-wrap: break-word;
-}
-.sub-header {
-    font-size: 36px;
-    display: flex;
-    justify-content: center;
-}
-
-.info {
-    text-align: center;
-}
-
-.academy {
-    margin-left:20px; 
-}
-
-/** End of Body Content Stuff **/
 
 /** Start of footer **/
 .page-footer {
+<<<<<<< HEAD:styles/Events.css
+  padding-top: 5px;
+	background: rgb(39, 39, 39);
+    /* box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25); */
+}
+
+.page-footer.dropdown > * {
+    margin-bottom: 0;
+}
+
+.footerRow {
+	margin-bottom: 0;
+}
+
+#specialChild {
+    text-align: center;
+}
+
+.footerSubHeader {
+    text-align: center;
+}
+
+.innerWorkings {
+    display: table;
+    margin: auto;
+}
+
+.footerContainer {
+	width: 100%;
+	
+}
+
+.footerSubHeader {
+    margin: 0.3rem 0 0.46rem 0;
+}
+
+
+#footerImg {
+    display: table;
+    margin: auto;
+    filter: invert(100%);
+}
+
+.footerContent {
+	font-size: 13px;
+}
+
+.verticalDivider {
+    position: relative;
+}
+
+.verticalDivider:after {
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.verticalDivider .column:not(:first-child):after, .vertical-divider .columns:not(:first-child):after{
+    background:#c3c3c3;
+    bottom: 0;
+    height: 50%;
+    content: " ";
+    position: absolute;
+    top: 25%;
+    width: 1px;
+}
+
+.copyright {
+    font-size: 10px;
+    font-weight: bold;
+}
+/** End of footer **/
+=======
 	padding-top: 5px;
 	  background: rgb(39, 39, 39);
 	  /* box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25); */
@@ -222,6 +218,7 @@ a {
   }
   /** End of footer **/
   
+>>>>>>> dev2:styles/homePage2.css
 
 #logout-button {
     display: none;
@@ -837,8 +834,4 @@ a {
 	background: #fbfdff;
 	box-shadow: inset 0 0 0 2px #a7e245;
 	transform: translateX(30%);
-<<<<<<< HEAD
 }
-=======
-} 
->>>>>>> 1006560d49c7719fb221c0ee117f8eefe43e632d
