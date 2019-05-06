@@ -38,6 +38,14 @@ body, html, #main {
 
 
 /** Start of events **/
+#events {
+	width: 94%;
+	height: 5%;
+	margin: none;
+	margin-left: 3%;
+	border: 2px solid black;
+}
+
 #events-area {
 	width: 100%;
 	height: 100%;
@@ -747,8 +755,4 @@ body, html, #main {
 	background: #fbfdff;
 	box-shadow: inset 0 0 0 2px #a7e245;
 	transform: translateX(30%);
-<<<<<<< HEAD
 }
-=======
-} 
->>>>>>> 1006560d49c7719fb221c0ee117f8eefe43e632d
