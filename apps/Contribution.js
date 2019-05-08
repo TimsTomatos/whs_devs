@@ -39,40 +39,35 @@ db.collection('partners').onSnapshot(function (snapshot) {
         console.log(count)
 
 
-
-
-
-
-        console.log(change.doc.data().namae)
-        if (change.doc.data().namae  == "") {
+        if (count % 2 == 0) {
             render.innerHTML += `
-            <div class="bottom"> 
-                <p class="col" >${change.doc.data().company}</p>
-                <p class="col" >none</p>
-                <p class="col" >none</p>
-                <p class="col" >none</p>
-                <p class="col" >none</p>
-            </div>`
+                <div class="bottom blue"> 
+                    <p class="col" >${change.doc.data().company}</p>
+                    <p class="col" >${change.doc.data().namae}</p>
+                    <p class="col" >${change.doc.data().hours}</p>
+                    <p class="col" >${change.doc.data().support}</p>
+                    <p class="col" >${change.doc.data().donation}</p>
+                </div>
+                `
 
         } else {
             render.innerHTML += `
-        <div class="bottom"> 
-            <p class="col" >${change.doc.data().company}</p>
-            <p class="col" >${change.doc.data().namae}</p>
-            <p class="col" >${change.doc.data().hours}</p>
-            <p class="col" >${change.doc.data().support}</p>
-            <p class="col" >${change.doc.data().donation}</p>
-        </div>
-        `
+                <div class="bottom"> 
+                    <p class="col" >${change.doc.data().company}</p>
+                    <p class="col" >${change.doc.data().namae}</p>
+                    <p class="col" >${change.doc.data().hours}</p>
+                    <p class="col" >${change.doc.data().support}</p>
+                    <p class="col" >${change.doc.data().donation}</p>
+                </div>
+                `
         }
-
 
     })
 
 })
 
-  // Or with jQuery
+// Or with jQuery
 
-  $(document).ready(function(){
+$(document).ready(function () {
     $('.modal').modal();
-  });
+});
