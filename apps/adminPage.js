@@ -2,9 +2,9 @@ var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['Mcdonalds', 'Caslabs', 'Taco Bell', 'YMCA', 'Aloha Market', 'Walmart'],
         datasets: [{
-            label: '# of Votes',
+            label: 'Current Donation Amount',
             data: [12, 19, 3, 5, 2, 3],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
