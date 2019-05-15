@@ -1,4 +1,21 @@
 var ctx = document.getElementById('myChart').getContext('2d');
+var cta = document.getElementById('thisChart').getContext('2d');
+
+var myLineChart = new Chart(cta, {
+  type: 'line',
+  data: [0.1, 0.2, 0.3, 5, 2, 3],
+  options: {
+    scales: {
+        yAxes: [{
+            ticks: {
+                beginAtZero: true
+            }
+        }]
+    }
+}
+});
+
+
 var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
@@ -35,3 +52,5 @@ var myChart = new Chart(ctx, {
         }
     }
 });
+
+
