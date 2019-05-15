@@ -100,6 +100,7 @@ const user_login = document.querySelector("#login-email");
 const pass_login = document.querySelector("#login-password");
 const login_button = document.querySelector("#btn-login")
 var render_username = document.querySelector("#render-username"); 
+var login_elem = document.querySelector("#mybtn"); 
 
 
 //Logout Button 
@@ -124,7 +125,10 @@ auth.onAuthStateChanged(function(user) { // Checks if they are signed in or sign
         console.log("Logged in");
         logout_button.style.display = "block";
         render_username.style.display = "block";
-        render_username.innerHTML = user.email;
+        render_username.innerHTML = 'Profile ';
+        login_elem.parentNode.removeChild(login_elem);
+        logout_button.parentNode.removeChild(logout_button);
+
     }
     else 
     {
