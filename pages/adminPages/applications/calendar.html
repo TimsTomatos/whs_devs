@@ -4,11 +4,13 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../dist/chartist.min.css">
+
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="../../css/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../../../css/materialize.min.css" media="screen,projection" />
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js" />
@@ -16,8 +18,8 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
 
-    <link type="text/css" rel="stylesheet" href="../../styles/adminPage.css" media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="../../styles/animate.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../../../styles/adminPage.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../../../styles/animate.css" media="screen,projection" />
 </head>
 
 <body>
@@ -29,23 +31,23 @@
                     <li>
                         <div class="user-view">
                             <div class="background">
-                                <img id="backgroundImage" src="../../background.jpg">
+                                <img id="backgroundImage" src="../../../background.jpg">
                             </div>
-                            <a href="#user"><img class="circle" src="../../ourLogo.png""></a>
+                            <a href="#user"><img class="circle" src="../../../ourLogo.png""></a>
                 <a href=" #name"><span class="name">Admin</span></a>
                             <a href="#email"><span class="email">me@admin.com</span></a>
                         </div>
                     </li>
-                    <li class="active"><a href="./dashboard.html"><i class="material-icons">dashboard</i>dashboard</a>
+                    <li><a href="../dashboard.html"><i class="material-icons">dashboard</i>dashboard</a>
                     </li>
                     <li>
                         <div class="divider"></div>
                     </li>
                     <li><a class="subheader">Applications</a></li>
-                    <li><a href="./toDo.html"><i class="material-icons">note</i>To Do</a></li>
-                    <li><a href="./mail.html"><i class="material-icons">email</i>Mail</a></li>
-                    <li><a href="./mail.html"><i class="material-icons">contacts</i>Contacts</a></li>
-                    <li><a href="./mail.html"><i class="material-icons">date_range</i>Calender</a></li>
+                    <li><a href="toDo.html"><i class="material-icons">note</i>To Do</a></li>
+                    <li><a href="mail.html"><i class="material-icons">email</i>Mail</a></li>
+                    <li><a href="contacts.html"><i class="material-icons">contacts</i>Contacts</a></li>
+                    <li class="active"><a href="calendar.html"><i class="material-icons">date_range</i>Calender</a></li>
                     <li>
                         <div class="divider"></div>
                     </li>
@@ -57,7 +59,7 @@
                         <div class="divider"></div>
                     </li>
                     <li><a class="subheader">Pages</a></li>
-                    <li><a href="../pages/Contribution.html"><i class="material-icons">attach_money</i>Contributions</a>
+                    <li><a href="../../ages/Contribution.html"><i class="material-icons">attach_money</i>Contributions</a>
                     </li>
                     <li><a class="waves-effect" href="#!"><i class="material-icons">event</i>Event Posts</a></li>
                     <li>
@@ -98,9 +100,8 @@
                 <div class="col-sm-5">
                     <div class="animated fadeInLeft card darken-1 topCard">
                         <div class="card-content black-text">
-                            <span class="card-title">Card Title</span>
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
+                            <span class="card-title">Total Hours</span>
+                            <div id="linePlot" class="ct-chart .ct-perfect-fifth"></div>
                         </div>
                     </div>
                 </div>
@@ -108,9 +109,8 @@
                 <div class="col-md-7">
                     <div class=" animated fadeInRight card darken-1 topCard">
                         <div class="card-content black-text">
-                            <span class="card-title">Card Title</span>
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
+                            <span class="card-title">Comapany Donations</span>
+                            <div id="compBar" class="ct-chart .ct-major-seventh "></div>
                         </div>
                     </div>
                 </div>
@@ -124,9 +124,7 @@
                 <div class="col-md-5">
                     <div class=" animated fadeInUp card darken-1 ">
                         <div class="card-content black-text midCard">
-                            <span class="card-title">Card Title</span>
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
+                            <span class="card-title">User Statistics</span>
                         </div>
                     </div>
                 </div>
@@ -134,9 +132,10 @@
                 <div class="col-md-3">
                     <div class=" animated fadeInUp card darken-1 ">
                         <div class="card-content black-text midCard">
-                            <span class="card-title">Card Title</span>
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
+                            <span class="card-title">Upcoming Events</span>
+                            <p>Spring Fair</p>
+                            <p>Saftey Fair</p>
+                            <p>Voluneet Fair</p>
                         </div>
                     </div>
                 </div>
@@ -144,9 +143,10 @@
                 <div class="col-md-4">
                     <div class="animated fadeInUp card darken-1 ">
                         <div class="card-content black-text midCard">
-                            <span class="card-title">Card Title</span>
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
+                            <span class="card-title">Recent Signups</span>
+                            <p>Jeraldy Cascayan</p>
+                            <p>John Doe</p>
+                            <p>Jane Doe</p>
                         </div>
 
                     </div>
@@ -159,9 +159,8 @@
                 <div class="col-md-4">
                     <div class="animated fadeInUp card darken-1 ">
                         <div class="card-content black-text">
-                            <span class="card-title">Card Title</span>
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
+                            <span class="card-title">Total Members</span>
+                            <p>42</p>
                         </div>
                     </div>
                 </div>
@@ -170,9 +169,8 @@
                 <div class="col-md-8">
                     <div class="animated fadeInUp card darken-1 ">
                         <div class="card-content black-text">
-                            <span class="card-title">Card Title</span>
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
+                            <span class="card-title">Quaterly Value</span>
+                            <div id="quaterBar" class="ct-chart .ct-major-second"></div>
                         </div>
                         <div class="card-action">
                             <a href="#">This is a link</a>
@@ -188,10 +186,15 @@
     </div>
     </div>
 
+
+
+
     <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
-    <script type="text/javascript" src="../js/materialize.min.js"></script>
-    <script src="../apps/adminPage.js"></script>
+
+    <script src="../../../js/materialize.min.js"></script>
+
+    <script type="text/javascript" src="../../../js/materialize.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -203,6 +206,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
 
+    <script src="../../../apps/adminPage.js"></script>
 </body>
 
 </html>
