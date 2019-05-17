@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Testing -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="../styles/homePage2.css">
+    <title>HomePage 2.0</title>
+</head>
+
+<body>
+    <div id="top">
+        <div id="top-bar">
+
+            <div id="nav-bar">
+
+                <ul id="slide-out" class="sidenav">
+                    <li>
+                        <div class="user-view">
+                            <div class="background">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="divider"></div>
+                    </li>
+                    <li><a href="../pages/Events.html" class="waves-effect academy" href="#!">Events</a></li>
+                    <li><a href="../pages/adminPage.html" class="waves-effect academy" href="#!">Admin Page</a></li>
+                    <li><a class="waves-effect academy">Arts & Communication</a></li>
+                    <li><a class="subheader" href="#!">Academy of Creative Media</a></li>
+                    <li><a class="waves-effect academy">Natural Resources</a></li>
+                    <li><a class="subheader" href="#!">Academy of Environment Resource</a></li>
+                    <li><a class="waves-effect academy" href="https://www.waipahuhigh.org/apps/pages/index.jsp?uREC_ID=1018129&type=d&pREC_ID=1678494"  target="_blank">Industrial & Engineering Technology</a></li>
+                    <li><a class="subheader" href="#!">Academy of Engineering</a></li>
+                    <li><a class="subheader" href="#!">Academy of Information & Technology</a></li>
+                    <li><a class="waves-effect academy" href="#!">Professional and Public Service</a></li>
+                    <li><a class="subheader" href="#!">Academy of Culinary Arts</a></li>
+                    <li><a class="subheader" href="#!">Academy of Finance</a></li>
+                    <li><a class="waves-effect academy" href="#!">Health and Science</a></li>
+                    <li><a class="subheader" href="#!">Academy of Health</a></li>
+                </ul>
+                <a href="#" data-target="slide-out" class="sidenav-trigger waves-effect waves-light btn"><i
+                        class="material-icons">menu</i></a>
+                <div class="nav-button">menu</div>
+                <div class="nav-button"><a href="../pages/Events.html">Events</a></div>
+                <div class="nav-button"><a href="../pages/Contribution.html">Contributors</a></div>
+                <img id="logo"
+                src="../ourLogo.png"
+                alt="Logo">
+                <div class="nav-button">Donations</div>
+                <div class="nav-button">How it works</div>
+                <div class="nav-button" id="mybtn" onclick="open_modal()">Login</div>
+                <div class="nav-button" id="render-username">test</div>
+                <button class="nav-button" id="btn-logout" onclick="logout()">Logout</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Modal-->
+    <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            
+                    <div id="login-box">
+                            <!--<div id="login-content">
+                            
+                            <input type="text" placeholder="username">
+                            <input type="text" placeholder="password">
+                            <a href="">Dont Have an Account? Sign Up Now!</a> -->
+                        
+            
+                        <span class="close">&times;</span>
+                        <section class="forms-section">
+                            <div class="forms">
+                              <div class="form-wrapper is-active">
+                                <button type="button" class="switcher switcher-login">
+                                  Login
+                                  <span class="underline"></span>
+                                </button>
+                                <form class="form form-login">
+                                  <fieldset>
+                                    <legend>Please, enter your email and password for login.</legend>
+                                    <div class="input-block">
+                                      <label for="login-email">E-mail</label>
+                                      <input id="login-email" type="email" required>
+                                    </div>
+                                    <div class="input-block">
+                                      <label for="login-password">Password</label>
+                                      <input id="login-password" type="password" required>
+                                    </div>
+                                  </fieldset>
+                                  <button type="submit" id="btn-login">Login</button>
+                                </form>
+                              </div>
+                              <div class="form-wrapper">
+                                <button type="button" class="switcher switcher-signup" id="btn-sign">
+                                  Sign Up
+                                  <span class="underline"></span>
+                                </button>
+                                <form class="form form-signup">
+                                  <fieldset>
+                                    <legend>Please, enter your email, password and password confirmation for sign up.</legend>
+                                    <div class="input-block">
+                                      <label for="signup-email">E-mail</label>
+                                      <input id="signup-email" type="email" required>
+                                    </div>
+                                    <div class="input-block">
+                                      <label for="signup-password">Password</label>
+                                      <input id="signup-password" type="password" required>
+                                    </div>
+                                    <div class="input-block">
+                                      <label for="signup-password-confirm">Confirm password</label>
+                                      <input id="signup-password-confirm" type="password" required>
+                                    </div>
+                                  </fieldset>
+                                  <button type="submit" class="btn-signup">Continue</button>
+                                </form>
+                              </div>
+                            </div>
+                          </section>
+                        </div>
+            
+          
+    </div>
+          
+
+
+
+
+
+
+    <div id="img-container">
+        <div id="text">
+            <h1>Donations</h1>
+            <h1>Help us fund our school!</h1>
+            <h6>try something new..</h6>
+            <a href="https://www.friendsofwaipahuhighschool.com/donation-options" class="waves-effect waves-light btn">donate now</a>
+        </div>
+        <video muted autoplay loop>
+            <source src="../Videos/whs_video.mp4" type="video/mp4">
+          </video>
+    </div>
+
+    <h1 id="header-text">Gratitude Towards Contributors</h1>
+    <div class="boxes">
+        <div class="clipart-images">
+            <div class="column">
+                <img class="clipart-image" src="../images/donation_1.png">
+                <h2 class="sub-header">Donate <i class="material-icons left">attach_money</i></h2>
+                <p class="info"> 
+                    Bit by Bit Our School Continues to Improve and That is Thanks to the Generous Donations Provided
+                    by Sponsors, Partners, Companies and Outstanding Individuals. We Will Continue to Grow, But Not as a 
+                    School But as a Community
+                </p>
+            </div>
+            <div class="column">
+                <img class="clipart-image" src="../images/volunteer_1.png">
+                <h2 class="sub-header">Volunteer <i class="material-icons left">nature_people</i></h2>
+                <p class="info">
+                    The Wonderful Volunteers Provide so Much Support and Commarde. 
+                    Ranging From Event Contributions, Guest Speakers, Community Service and So Much More.
+                </p>
+            </div>
+            <div class="column">
+                <img class="clipart-image" src="../images/grow_1.png">
+                <h2 class="sub-header">Grow<i class="material-icons left">terrain</i></h2>
+                <p class="info">
+                    We All Grow Together! We Are One Ohana, and we Strive to Become a Fun and Educated Environment
+                    For All Students, Parents, Faculty and Guest. We Are Looking Forward to the Continous Growth of
+                    Our Community and Contributors.
+                </p>
+            </div>
+        </div>
+    
+
+        <div class="textBox">
+
+
+        </div>
+        <img class="imgBox" src="">
+    </div>
+
+
+    <div class="page-footer">
+
+        <div class="container footerContainer">
+          <!--Main Container it is in-->
+    
+          <div class="row footerRow verticalDivider">
+            <!--the general row it is in-->
+    
+            <div class="col s12 m4 hide-on-small-only column">
+              <!--Column 1~Image-->
+              <img id="footerImg" src="../ourLogo.png" alt="A flat illistrated rndom">
+    
+            </div>
+    
+            <div class="col s12 m4 column">
+              <!--Column 2~Links-->
+    
+              <div id="specialChild" class="row footerRow">
+                <!--Level 1 of a inner Row-->
+    
+                <div class="col s12 grey-text text-lighten-1 light">
+                  <h6 class="footerSubHeader">
+                    Links
+                  </h6>
+                </div>
+
+                <div class="col s12 m4 column">
+                    <!--Column 2~Links-->
+
+                    <div id="specialChild" class="row footerRow">
+                        <!--Level 1 of a inner Row-->
+
+                        <div class="col s12 grey-text text-lighten-1 light">
+                            <h6 class="footerSubHeader">
+                                Links
+                            </h6>
+                        </div>
+
+                        <div class="col s12">
+
+                            <div class="row footerRow">
+                                <!--Level 2 of a inner Row-->
+
+                                <a href="https://www.waipahuhigh.org/" target="_blank"
+                                    class="col s12 grey-text text-lighten-1 light footerContent"> Waipahu High School </a>
+                                <a href="https://www.friendsofwaipahuhighschool.com/" target="_blank"
+                                    class="col s12 grey-text text-lighten-1 light footerContent"> Friends Of Waipahu </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+    
+              </div>
+    
+            </div>
+    
+            <div class="col s12 m4 column">
+              <!--Column 2~Links-->
+    
+              <div class="row footerRow">
+                <!--Level 1 of a inner Row-->
+    
+                <div class="col s12 grey-text text-lighten-1 light">
+                  <h6 class="footerSubHeader">
+                    Contact
+                  </h6>
+                </div>
+    
+                <div class="col s12">
+    
+                  <div class="row footerRow">
+                    <!--Level 2 of a inner Row-->
+    
+                    <div href="../html/article.html" class="col s12 grey-text text-lighten-1 light footerContent">
+                      <div class="innerWorkings">
+                        <i class="material-icons left">contact_phone</i>
+                        <span>(808) 307-9555</span>
+                      </div>
+                    </div>
+    
+                    <div href="../html/article.html" class="col s12 grey-text text-lighten-1 light footerContent">
+    
+                      <div class="innerWorkings">
+                        <i class="material-icons left">
+                          contact_mail</i>
+                        <span>waipahu_admin@gmail.com</span>
+                      </div>
+                    </div>
+    
+                    <div href="../html/article.html" class="col s12 grey-text text-lighten-1 light footerContent">
+    
+                      <div class="innerWorkings">
+                        <i class="material-icons left">home</i>
+                        <span> 94-1211 Farrington Hwy</span>
+                      </div>
+    
+                    </div>
+    
+                  </div>
+    
+                </div>
+    
+              </div>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAVGq1K_E0Fkzo1DDHch_uS-2_hkfDa1q8",
+    authDomain: "whs-devs.firebaseapp.com",
+    databaseURL: "https://whs-devs.firebaseio.com",
+    projectId: "whs-devs",
+    storageBucket: "whs-devs.appspot.com",
+    messagingSenderId: "978939713269"
+  };
+  firebase.initializeApp(config);
+  const auth = firebase.auth();
+</script>
+<script src="../apps/homePage2.js"></script>
+
+</html>
