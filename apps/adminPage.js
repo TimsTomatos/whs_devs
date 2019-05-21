@@ -51,3 +51,9 @@ var data2 = {
   });
 
   
+
+  var elem= document.querySelector('.modal');
+  var instance = M.Modal.init(elem);
+  instance.open();
+
+         

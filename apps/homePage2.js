@@ -105,6 +105,7 @@ var login_elem = document.querySelector("#mybtn");
 
 //Logout Button 
 const logout_button = document.querySelector("#btn-logout");
+const log2 = document.querySelector('#btn-logout2');
 
 // Sign Up Functions 
 signup_button.addEventListener('submit', function(parm) {
@@ -125,7 +126,7 @@ auth.onAuthStateChanged(function(user) { // Checks if they are signed in or sign
         console.log("Logged in");
         logout_button.style.display = "block";
         render_username.style.display = "block";
-        render_username.innerHTML = 'Profile ';
+        render_username.innerHTML = '<a href="../pages/profilePage.html">Profile</a>';
         login_elem.parentNode.removeChild(login_elem);
         logout_button.parentNode.removeChild(logout_button);
 
@@ -160,7 +161,7 @@ login_button.onclick = function() {
 
 
 // logout
-logout_button.addEventListener('click', function () {
+log2.addEventListener('click', function () {
     auth.signOut()
     .then(function() {
         console.log("logged out")
