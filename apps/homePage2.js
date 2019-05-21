@@ -9,7 +9,7 @@
   };
   firebase.initializeApp(config);
   const auth = firebase.auth();
-
+  const db = firebase.firestore();
 
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');

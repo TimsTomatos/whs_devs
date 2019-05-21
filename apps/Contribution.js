@@ -1,7 +1,15 @@
 var form = document.querySelector("#form");
-
-
-
+var config = {
+    apiKey: "AIzaSyAVGq1K_E0Fkzo1DDHch_uS-2_hkfDa1q8",
+    authDomain: "whs-devs.firebaseapp.com",
+    databaseURL: "https://whs-devs.firebaseio.com",
+    projectId: "whs-devs",
+    storageBucket: "whs-devs.appspot.com",
+    messagingSenderId: "978939713269"
+  };
+  firebase.initializeApp(config);
+  const auth = firebase.auth();
+  const db = firebase.firestore()
 
 // User Input Values
 var namae = document.querySelector("#nam");
@@ -76,3 +84,9 @@ db.collection('partners').onSnapshot(function (snapshot) {
   $(document).ready(function(){
     $('.modal').modal();
   });
+
+
+
+
+
+  
