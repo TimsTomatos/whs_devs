@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../../../styles/chartist.min.css">
-
+    <link rel="stylesheet" href="../../../styles/adminToDo.css">
 
 
 
@@ -79,7 +79,194 @@
         <div id="content" class="container">
             <div id="colorHeadREAL">
             </div>
-            <h1>oof</h1>
+
+            <ul class="nav justify-content-center align-items-center bg-blue1">
+                <li class="nav-item nav-title"><a class="nav-link active" href="#">My Tasks</a></li>
+                <li class="nav-item nav-title"><a class="nav-link" href="#">In Progress</a></li>
+                <li class="nav-item nav-title"><a class="nav-link" href="#">Completed</a></li>
+            </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col-12 col-sm-6 mt-3">
+                        <div class="card shadow">
+                            <div class="card-header bg-gray1">
+                                <div class="form-check d-flex">
+                                    <input class="form-check-input" id="defaultCheck1" type="checkbox" value="" />
+                                    <input class="ml-2" id="defaultText" type="text" for="defaultCheck1"
+                                        placeholder="Type Something Here…" />
+                                    <h5 class="d-flex ml-auto"><a href="#" id="btn-star">
+                                            <div class="far fa-star mr-4"></div>
+                                        </a><a href="#">
+                                            <div class="fas fa-pen" id="btn-pen-active"></div>
+                                        </a></h5>
+                                </div>
+                            </div>
+                            <div class="card-body bg-gray1">
+                                <form></form>
+                                <div class="form-row mb-3">
+                                    <div class="col-12">
+                                        <label for="date"> <i
+                                                class="far fa-calendar-alt fa-fw mr-3"></i>Deadline</label>
+                                    </div>
+                                    <div class="form-group col-md-1"></div>
+                                    <div class="form-group col-md-5 col-12">
+                                        <input class="form-control" id="date" type="datedate"
+                                            placeholder="yyyy/mm/dd" />
+                                    </div>
+                                    <div class="form-group col-md-5 col-12">
+                                        <input class="form-control" id="time" type="timetime" placeholder="hh:mm" />
+                                    </div>
+                                </div>
+                                <div class="form-row mb-4">
+                                    <div class="col-12">
+                                        <label for="file"> <i class="far fa-file fa-fw mr-3"></i>File</label>
+                                        <button class="btn btn-gray3" id="file" type="file"
+                                            style="display: block; margin-left: 42px;">
+                                            <div class="d-flex justify-content-center"><i
+                                                    class="fal fa-plus fa-fw fz-14 fw-500"></i></div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-12">
+                                        <label for="comments"><i class="far fa-comment fa-fw mr-3"></i>Comment</label>
+                                    </div>
+                                    <div class="form-group col-md-1"></div>
+                                    <div class="form-group col-md-10 col-12">
+                                        <textarea class="form-control" id="comments" type="text"
+                                            placeholder="Type your memo here…" rows="4" cols="50" name="comment"
+                                            form="usrform"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-sm-6 bg-white p-3" id="btn-cancel">
+                                        <div class="text-center text-red fz-20"><i
+                                                class="fal fa-times fa-fw mr-2"></i>Cancel</div>
+                                    </div>
+                                    <div class="col-sm-6 bg-blue1 p-3" id="btn-addtask">
+                                        <div class="text-center text-white fz-20"><i
+                                                class="fal fa-plus fa-fw mr-2"></i>Add Task</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col-12 col-sm-6 mt-3">
+                        <div class="card bg-yellow">
+                            <div class="card-header" style="border-bottom: 0;">
+                                <div class="col-12 form-check d-flex">
+                                    <input class="form-check-input" id="defaultCheck1" type="checkbox" value="" />
+                                    <h5 class="ml-2" id="defaultText" type="text" for="defaultCheck1">Contact Business Person from Blue Starters</h5>
+                                    <h5 class="d-flex ml-auto"><a href="#" id="btn-star-active">
+                                            <div class="fas fa-star mr-4"></div>
+                                        </a><a href="#">
+                                            <div class="far fa-pen" id="btn-pen"></div>
+                                        </a></h5>
+                                </div>
+                                <div class="text-gray4 mt-2 ml-4"><i class="far fa-calendar-alt fa-fw mr-2"></i>5/14<i
+                                        class="far fa-file fa-fw mr-2 ml-3"></i><i
+                                        class="far fa-comment fa-fw mr-2"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col-12 col-sm-6 mt-3">
+                        <div class="card bg-yellow">
+                            <div class="card-header" style="border-bottom: 0;">
+                                <div class="col-12 form-check d-flex">
+                                    <input class="form-check-input" id="defaultCheck1" type="checkbox" value="" />
+                                    <h5 class="ml-2" id="defaultText" type="text" for="defaultCheck1">Update Events for upcoming quater
+                                    </h5>
+                                    <h5 class="d-flex ml-auto"><a href="#" id="btn-star-active">
+                                            <div class="fas fa-star mr-4"></div>
+                                        </a><a href="#">
+                                            <div class="far fa-pen" id="btn-pen"></div>
+                                        </a></h5>
+                                </div>
+                                <div class="text-gray4 mt-2 ml-4"><i class="far fa-file fa-fw mr-2"></i><i
+                                        class="far fa-comment fa-fw mr-2"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col-12 col-sm-6 mt-3">
+                        <div class="card bg-gray1">
+                            <div class="card-header" style="border-bottom: 0;">
+                                <div class="col-12 form-check d-flex">
+                                    <input class="form-check-input" id="defaultCheck1" type="checkbox" value="" />
+                                    <h5 class="ml-2" id="defaultText" type="text" for="defaultCheck1">Delete John Doe from the donation list.</h5>
+                                    <h5 class="d-flex ml-auto"><a href="#" id="btn-star">
+                                            <div class="far fa-star mr-4"></div>
+                                        </a><a href="#">
+                                            <div class="far fa-pen" id="btn-pen"></div>
+                                        </a></h5>
+                                </div>
+                                <div class="text-gray4 mt-2 ml-4"><i
+                                        class="far fa-calendar-alt fa-fw mr-2"></i>2019/6/18</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3"> </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col-12 col-sm-6 mt-3">
+                    </div>
+                    <div class="col-sm-3"> </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col-12 col-sm-6 mt-3">
+                        <div class="card bg-gray1">
+                            <div class="card-header" style="border-bottom: 0;">
+                                <div class="col-12 form-check d-flex">
+                                    <input class="form-check-input" id="defaultCheck1" type="checkbox" checked="checked"
+                                        value="" />
+                                    <h5 class="dis ml-2" id="defaultText" type="text" for="defaultCheck1">Contact whs_devs</h5>
+                                    <h5 class="d-flex ml-auto"><a href="#" id="btn-star">
+                                            <div class="far fa-star mr-4"></div>
+                                        </a><a href="#">
+                                            <div class="far fa-pen" id="btn-pen"></div>
+                                        </a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3"> </div>
+                </div>
+            </div>
+            <div class="footer mb-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3"></div>
+                        <div class="col-12 col-sm-6 mt-2 text-gray3 font-italic ml-4 fw-300 fz-20">4 tasks left</div>
+                        <div class="col-sm-3"></div>
+                    </div>
+                </div>
+            </div>
 
 
         </div>

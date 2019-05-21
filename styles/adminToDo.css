@@ -1,0 +1,213 @@
+html, body, a, label {
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", Arial, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  
+  html, body {
+    background-color: white;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  form {
+    line-height: 24px;
+  }
+  
+  .form-control {
+    border: 0;
+  }
+  
+  label {
+    font-size: 20px;
+  }
+  
+  .shadow {
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .fz-14 {
+    font-size: 14px;
+  }
+  
+  .fz-20 {
+    font-size: 20px;
+  }
+  
+  .fw-500 {
+    font-weight: 500;
+  }
+  
+  .nav-title {
+    font-weight: normal;
+    font-size: 24px;
+  }
+  .nav-title a {
+    color: #00408B;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  .nav-title a.active {
+    color: #fff;
+    border-bottom: solid 5px #00408B;
+  }
+  .nav-title a:hover {
+    color: #00408B;
+  }
+  
+  .bg-blue1 {
+    background-color: #ee6e73;
+  }
+  
+  .bg-blue2 {
+    background-color: #dc3545;
+  }
+  
+  .bg-red {
+    background-color: #D0021B;
+  }
+  
+  .bg-orange {
+    background-color: #F5A623;
+  }
+  
+  .bg-yellow {
+    background-color: #FFF2DC;
+  }
+  
+  .bg-gray1 {
+    background-color: #F2F2F2;
+  }
+  
+  .bg-gray2 {
+    background-color: #E1E1E1;
+  }
+  
+  .bg-gray3 {
+    background-color: #C8C8C8;
+  }
+  
+  .bg-gray4 {
+    background-color: #757575;
+  }
+  
+  .fw-300 {
+    font-weight: 300;
+  }
+  
+  .fz-20 {
+    font-size: 20px;
+  }
+  
+  .text-blue1 {
+    color: #dc3545;
+  }
+  
+  .text-red {
+    color: #D0021B;
+  }
+  
+  .text-gray3 {
+    color: #C8C8C8;
+  }
+  
+  .text-gray4 {
+    color: #757575;
+  }
+  
+  .btn-gray3 {
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    color: #fff;
+    background-color: #C8C8C8;
+    border-radius: 3px;
+  }
+  
+  .btn-gray3:hover {
+    background-color: #757575;
+    border-radius: 3px;
+  }
+  
+  #btn-pen {
+    color: #000;
+  }
+  
+  #btn-pen-active {
+    color: #4A90E2;
+  }
+  
+  #btn-star {
+    color: #000;
+  }
+  #btn-star a:hover {
+    color: #00408B;
+  }
+  
+  #btn-star-active {
+    color: #F5A623;
+  }
+  
+  #btn-cancel {
+    cursor: pointer;
+    border-bottom-left-radius: 5px;
+  }
+  
+  #btn-addtask {
+    cursor: pointer;
+    border-bottom-right-radius: 5px;
+  }
+  
+  @media (max-width: 575.98px) {
+    #btn-addtask {
+      border-bottom-left-radius: 5px;
+    }
+  }
+  .nav {
+    line-height: 28px;
+    height: 76px;
+  }
+  
+  a.nav-link:hover {
+    color: #fff;
+  }
+  
+  .card {
+    border-radius: 5px;
+  }
+  
+  .card-header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  
+  .card-body {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  
+  .card-header {
+    border-bottom: 2.4px solid rgba(0, 0, 0, 0.1);
+  }
+  
+  #defaultText {
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+  #defaultText.dis {
+    text-decoration: line-through;
+    border: 0;
+    color: #757575;
+  }
+  
+  input#defaultText {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  
+
+  #content {
+    padding:0;
+    width:100%;
+  }
