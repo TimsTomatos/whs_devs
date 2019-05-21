@@ -530,9 +530,9 @@ a {
 
 
 /* Modal Content */
-/*#btn-logout {
+#btn-logout {
     display: none;
-}*/
+}
 
 .modal-content {
   background-color: #fefefe;
