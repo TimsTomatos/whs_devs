@@ -140,16 +140,16 @@ auth.onAuthStateChanged(function(user) { // Checks if they are signed in or sign
         logout_button.style.display = "block";
         render_username.style.display = "block";
         render_username.innerHTML = '<a href="../pages/profilePage.html">Profile</a>';
-        login_elem.parentNode.removeChild(login_elem);
+        //login_elem.parentNode.removeChild(login_elem);
         //logout_button.parentNode.removeChild(logout_button);
-
+        login_elem.style.display = "none";
     }
     else 
     {
         console.log("Logged out");
-        login_elem.style.display = "block";
     }
 });
+
 
 
 // Login Stuff Functions
@@ -178,10 +178,10 @@ login_button.onclick = function() {
 logout_button.addEventListener('click', function () {
     auth.signOut()
     .then(function() {
-        console.log("logged out")
-        login_elem.style.display = "block";
+        console.log("logged oof")
+        btn.style.display = "block";
         logout_button.style.display = "none";
-        render_username.innerHTML = "";
+        //render_username.innerHTML = "";
         render_username.style.display = "none";
     })
 
