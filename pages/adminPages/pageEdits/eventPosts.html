@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../../../styles/chartist.min.css">
-
+    <link rel="stylesheet" href="../../../styles/adminPageEvents.css">
 
 
 
@@ -47,7 +47,7 @@
                         <div class="divider"></div>
                     </li>
                     <li><a class="subheader">Applications</a></li>
-                    <li class="active"><a href="../applications/toDo.html"><i class="material-icons">note</i>To Do</a>
+                    <li><a href="../applications/toDo.html"><i class="material-icons">note</i>To Do</a>
                     </li>
                     <li><a href="../applications/mail.html"><i class="material-icons">email</i>Mail</a></li>
                     <li><a href="../applications/contacts.html"><i class="material-icons">contacts</i>Contacts</a></li>
@@ -67,7 +67,8 @@
                     <li><a href="../../../pages/Contribution.html"><i
                                 class="material-icons">attach_money</i>Contributions</a>
                     </li>
-                    <li><a class="waves-effect" href="#!"><i class="material-icons">event</i>Event Posts</a></li>
+                    <li class="active"><a class="waves-effect" href="#!"><i class="material-icons">event</i>Event
+                            Posts</a></li>
                     <li>
                         <div class="divider"></div>
                     </li>
@@ -79,11 +80,11 @@
         <div id="content" class="container">
             <div id="colorHeadREAL">
             </div>
-            <div class="card horizontal">
+            <div class="animated bounceInUp card horizontal">
                 <div class="card-stacked">
                     <div class="card-content">
-                        <h4>Submit Event</h4>
-                        <div class="row">
+                        <h4 id="submitEventTitle">Submit Event</h4>
+                        <div id="topRowEvent" class="row">
                             <form class="col s12">
                                 <div class="row">
                                     <div class="file-field input-field col s12">
