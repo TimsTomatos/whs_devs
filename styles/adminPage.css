@@ -104,10 +104,16 @@ nav .brand-logo {
 }
 
 .row {
-    margin-top:50px;
-    margin-bottom:70px;
+    margin-top:5%;
+    margin-bottom:7%;
 }
 
 .clickable {
     cursor: pointer;
+}
+
+#colorHeadREAL {
+    width:100%;
+    height:180px;
+    background-color:#ee6e73;
 }
