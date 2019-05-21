@@ -11,10 +11,15 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="../styles/homePage2.css">
+    <link rel="stylesheet" type="text/css" href="../styles/profilePage.css">
     <title>HomePage 2.0</title>
 </head>
 
@@ -137,15 +142,22 @@
 
 
 
+    <div id="profileContent" class="container">
+        <div class="row">
+            <div id="profileAvatar" class="float-right col-5">
+                <span class="align-middle">
+                    <img src="../resc/avatar.png" alt="Avatar" class="avatar">
+                </span>
+            </div>
+            </span>
+            <div id="profileInfo" class="col-7">
+                <h1>Welcome, User!</h1>
+                <h2>About</h2>
+                <h2>Settings</h2>
+                <button class="nav-button" id="btn-logout2" onclick="logout()">Logout</button>
+            </div>
+        </div>
 
-
-
-    <div id="img-container">
-    </div>
-
-    <h1 id="header-text">Profile Page</h1>
-    <div class="boxes">
-            <button class="nav-button" id="btn-logout2" onclick="logout()">Logout</button>
     </div>
 
 
@@ -291,6 +303,12 @@
     firebase.initializeApp(config);
     const auth = firebase.auth();
 </script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+
+
 <script src="../apps/homePage2.js"></script>
 
 </html>

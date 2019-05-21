@@ -1,0 +1,15 @@
+#profileAvatar {
+    margin-top: 10%;
+    text-align: right;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 150px;
+    height: 150px;
+    border-radius: 40%;
+}
+
+#profileContent {
+    margin-top: 5%;
+}
