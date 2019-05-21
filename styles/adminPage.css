@@ -117,3 +117,11 @@ nav .brand-logo {
     height:180px;
     background-color:#ee6e73;
 }
+
+#closeBtn {
+    margin:3%;
+}
+
+.modal {
+    max-height: 50%;
+}
