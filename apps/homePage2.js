@@ -137,7 +137,9 @@ auth.onAuthStateChanged(function(user) { // Checks if they are signed in or sign
     if (user)
     {
         console.log("Logged in");
-        logout_button.style.display = "none";
+
+        //CHANGGED TO NONE LATER FOR LOGOUT_BUTTON 
+        logout_button.style.display = "block";
         render_username.style.display = "block";
         render_username.innerHTML = '<a href="../pages/profilePage.html">Profile</a>';
         //login_elem.parentNode.removeChild(login_elem);
