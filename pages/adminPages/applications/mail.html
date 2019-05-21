@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../../../styles/chartist.min.css">
-
+    <link rel="stylesheet" href="../../../styles/adminEmail.css">
 
 
 
@@ -48,9 +48,11 @@
                     </li>
                     <li><a class="subheader">Applications</a></li>
                     <li><a href="../applications/toDo.html"><i class="material-icons">note</i>To Do</a></li>
-                    <li class="active"><a href="../applications/mail.html"><i class="material-icons">email</i>Mail</a></li>
+                    <li class="active"><a href="../applications/mail.html"><i class="material-icons">email</i>Mail</a>
+                    </li>
                     <li><a href="../applications/contacts.html"><i class="material-icons">contacts</i>Contacts</a></li>
-                    <li><a href="../applications/calendar.html"><i class="material-icons">date_range</i>Calender</a></li>
+                    <li><a href="../applications/calendar.html"><i class="material-icons">date_range</i>Calender</a>
+                    </li>
                     <li>
                         <div class="divider"></div>
                     </li>
@@ -62,7 +64,8 @@
                         <div class="divider"></div>
                     </li>
                     <li><a class="subheader">Pages</a></li>
-                    <li><a href="../../../pages/Contribution.html"><i class="material-icons">attach_money</i>Contributions</a>
+                    <li><a href="../../../pages/Contribution.html"><i
+                                class="material-icons">attach_money</i>Contributions</a>
                     </li>
                     <li><a class="waves-effect" href="#!"><i class="material-icons">event</i>Event Posts</a></li>
                     <li>
@@ -76,7 +79,52 @@
         <div id="content" class="container">
             <div id="colorHeadREAL">
             </div>
-            <h1>oof</h1>
+            <div class="animated fadeInUp page-wrapper">
+                <section class="messages wrapper">
+                    <h5 class="mailText">Messages <span class="current-mailbox">/ Inbox</span></h5>
+                    <div class="actions">
+                        <span class="compose"><a href="#">New</a></span>
+                        <a href="#">Reply</a>
+                        <a href="#">Archive</a>
+                        <a href="#">Move</a>
+                        <a href="#">Mark</a>
+                        <a href="#">Delete</a>
+                    </div>
+                    <ul class="message-list">
+                        <li class="message unread">
+                            <a class="message-data people" href="#">John Smith</a>
+                            <a class="message-data subject" href="#">Hey, how’s the project coming along?</a>
+                            <time class="message-data date" datetime="2014-03-16T15:00+07:00">Today, 3 PM</time>
+                        </li>
+                        <li class="message unread">
+                            <a class="message-data people" href="#">Fancy Bikes</a>
+                            <a class="message-data subject" href="#">Your bike has been shipped!</a>
+                            <time class="message-data date" datetime="2014-03-16T14:15+07:00">Today, 2:15 PM</time>
+                        </li>
+                        <li class="message">
+                            <a class="message-data people" href="#">Lisa</a>
+                            <a class="message-data subject" href="#">Hike Tomorrow?</a>
+                            <time class="message-data date" datetime="2014-03-16T10:00+07:00">Today, 10 AM</time>
+                        </li>
+                    </ul>
+                </section>
+                <section class="mailboxes wrapper">
+                    <h5 class="mailText" id="mailboxes">Mailboxes</h5>
+                    <ul class="mailbox-list default">
+                        <li class="mailbox selected"><a href="#">Inbox <span class="unread-count">2</span></a></li>
+                        <li><a class="mailbox" href="#">Sent</a></li>
+                        <li><a class="mailbox" href="#">Drafts</a></li>
+                        <li><a class="mailbox" href="#">Trash</a></li>
+                        <li><a class="mailbox" href="#">Archive</a></li>
+                    </ul>
+                    <ul class="mailbox-list custom">
+                        <li><a class="mailbox" href="#">Work <span class="unread-count">1</span></a></li>
+                        <li><a class="mailbox" href="#">Outdoors <span class="unread-count">1</span></a></li>
+                        <li><a class="mailbox" href="#">Personal</a></li>
+                    </ul>
+                </section>
+            </div>
+
 
         </div>
 
@@ -103,6 +151,7 @@
     </script>
 
     <script src="../../../apps/adminPage.js"></script>
+    <script src="../../../apps/adminMailPage.js"></script>
 </body>
 
 </html>
