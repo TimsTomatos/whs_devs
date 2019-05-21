@@ -65,6 +65,8 @@ function leftImage() {
 
 
 
+var admin_btn = document.querySelector("#adminBtn");
+
 // Modal Stuff
 var modal = document.getElementById('myModal');
 var btn = document.getElementById("mybtn");
@@ -165,8 +167,11 @@ login_button.addEventListener('click', function(parm) {
     .then(function (user) {
         
         //Checks for admin account
-        if (user = "admin@gmail.com") {
+       // console.log(user.user.email)
+        if (user.user.email == "admin@gmail.com") {
             console.log("Working as Intended!!") 
+            window.open ('adminPages/dashboard.html','_self',false)
+            admin_btn.style.display = "block";
         }
         console.log("Login Successful")
     })
