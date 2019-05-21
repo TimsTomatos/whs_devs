@@ -49,7 +49,7 @@ db.collection('partners').onSnapshot(function (snapshot) {
 
 
 
-
+         var time_spent = change.doc.data().support * 10;
 
         console.log(change.doc.data().namae)
         if (change.doc.data().namae  == "") {
@@ -70,6 +70,7 @@ db.collection('partners').onSnapshot(function (snapshot) {
             <p class="col" >${change.doc.data().hours}</p>
             <p class="col" >${change.doc.data().support}</p>
             <p class="col" >${change.doc.data().donation}</p>
+            <p class="col" >$${time_spent}</p>
         </div>
         `
         }

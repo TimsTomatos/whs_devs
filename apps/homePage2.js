@@ -166,13 +166,13 @@ login_button.addEventListener('click', function(parm) {
 
     auth.signInWithEmailAndPassword(username_value, password_value)
     .then(function (user) {
-        
+        console.log(user.user.email)
         //Checks for admin account
        // console.log(user.user.email)
         if (user.user.email == "admin@gmail.com") {
             console.log("Working as Intended!!") 
-            window.open ('adminPages/dashboard.html','_self',false)
             admin_btn.style.display = "block";
+            window.open ('adminPages/dashboard.html','_self',false)
         }
         console.log("Login Successful")
     })
