@@ -30,8 +30,8 @@ width: 45%;
 	align-items: center;
 }
 
-#nav-button {
-
+.nav-button {
+	color: #039be5;
 }
 
 #logo {
@@ -69,7 +69,6 @@ max-height: 50%;
 
 /** Start of footer **/
 .page-footer {
-<<<<<<< HEAD:styles/Events.css
 padding-top: 5px;
 background: rgb(39, 39, 39);
 	/* box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25); */
@@ -143,82 +142,6 @@ font-size: 13px;
 	font-weight: bold;
 }
 /** End of footer **/
-=======
-padding-top: 5px;
-	background: rgb(39, 39, 39);
-	/* box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25); */
-}
-
-.page-footer.dropdown > * {
-	margin-bottom: 0;
-}
-
-.footerRow {
-	margin-bottom: 0;
-}
-
-#specialChild {
-	text-align: center;
-}
-
-.footerSubHeader {
-	text-align: center;
-}
-
-.innerWorkings {
-	display: table;
-	margin: auto;
-}
-
-.footerContainer {
-	width: 100%;
-	
-}
-
-.footerSubHeader {
-	margin: 0.3rem 0 0.46rem 0;
-}
-
-
-#footerImg {
-	display: table;
-	margin: auto;
-	filter: invert(100%);
-}
-
-.footerContent {
-	font-size: 13px;
-}
-
-.verticalDivider {
-	position: relative;
-}
-
-.verticalDivider:after {
-	clear: both;
-	content: " ";
-	display: block;
-	height: 0;
-	visibility: hidden;
-}
-
-.verticalDivider .column:not(:first-child):after, .vertical-divider .columns:not(:first-child):after{
-	background:#c3c3c3;
-	bottom: 0;
-	height: 50%;
-	content: " ";
-	position: absolute;
-	top: 25%;
-	width: 1px;
-}
-
-.copyright {
-	font-size: 10px;
-	font-weight: bold;
-}
-/** End of footer **/
-
->>>>>>> dev2:styles/homePage2.css
 
 #logout-button {
 	display: none;

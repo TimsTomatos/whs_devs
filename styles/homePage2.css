@@ -14,6 +14,11 @@ body, html, #main {
 	justify-content: center;
 }
 
+
+#adminBtn {
+	display: none;
+}
+
 #top-bar {
     width: 100%;
     height: 100%;
@@ -94,9 +99,9 @@ video {
     margin-bottom:10%
 }
 
-a {
+/*a {
     padding-bottom: 5%;
-}
+}*/
 
 .textBox {
     height: 100%;
@@ -839,3 +844,6 @@ a {
 	transform: translateX(30%);
 } 
 
+#mybtn {
+	display: block;
+}

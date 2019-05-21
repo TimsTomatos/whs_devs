@@ -9,7 +9,7 @@
   };
   firebase.initializeApp(config);
   const auth = firebase.auth();
-
+  const db = firebase.firestore();
 
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
@@ -64,6 +64,8 @@ function leftImage() {
 }
 
 
+
+var admin_btn = document.querySelector("#adminBtn");
 
 // Modal Stuff
 var modal = document.getElementById('myModal');
@@ -137,19 +139,21 @@ auth.onAuthStateChanged(function(user) { // Checks if they are signed in or sign
     if (user)
     {
         console.log("Logged in");
+
+        //CHANGGED TO NONE LATER FOR LOGOUT_BUTTON 
         logout_button.style.display = "block";
         render_username.style.display = "block";
         render_username.innerHTML = '<a href="../pages/profilePage.html">Profile</a>';
-        login_elem.parentNode.removeChild(login_elem);
+        //login_elem.parentNode.removeChild(login_elem);
         //logout_button.parentNode.removeChild(logout_button);
-
+        login_elem.style.display = "none";
     }
     else 
     {
         console.log("Logged out");
-        login_elem.style.display = "block";
     }
 });
+
 
 
 // Login Stuff Functions
@@ -163,8 +167,11 @@ login_button.addEventListener('click', function(parm) {
     .then(function (user) {
         
         //Checks for admin account
-        if (user = "admin@gmail.com") {
+       // console.log(user.user.email)
+        if (user.user.email == "admin@gmail.com") {
             console.log("Working as Intended!!") 
+            window.open ('adminPages/dashboard.html','_self',false)
+            admin_btn.style.display = "block";
         }
         console.log("Login Successful")
     })
@@ -178,10 +185,10 @@ login_button.onclick = function() {
 logout_button.addEventListener('click', function () {
     auth.signOut()
     .then(function() {
-        console.log("logged out")
-        login_elem.style.display = "block";
+        console.log("logged oof")
+        btn.style.display = "block";
         logout_button.style.display = "none";
-        render_username.innerHTML = "";
+        //render_username.innerHTML = "";
         render_username.style.display = "none";
     })
 
