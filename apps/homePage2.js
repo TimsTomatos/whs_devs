@@ -1,3 +1,16 @@
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAVGq1K_E0Fkzo1DDHch_uS-2_hkfDa1q8",
+    authDomain: "whs-devs.firebaseapp.com",
+    databaseURL: "https://whs-devs.firebaseio.com",
+    projectId: "whs-devs",
+    storageBucket: "whs-devs.appspot.com",
+    messagingSenderId: "978939713269"
+  };
+  firebase.initializeApp(config);
+  const auth = firebase.auth();
+
+
 document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.sidenav');
     var instances = M.Sidenav.init(elems, {});
@@ -81,7 +94,7 @@ switchers.forEach(item => {
 	item.addEventListener('click', function() {
 		switchers.forEach(item => item.parentElement.classList.remove('is-active'))
         this.parentElement.classList.add('is-active')
-        console.log("oof")
+        console.log("oof");
 	})
 })
 
@@ -128,12 +141,13 @@ auth.onAuthStateChanged(function(user) { // Checks if they are signed in or sign
         render_username.style.display = "block";
         render_username.innerHTML = '<a href="../pages/profilePage.html">Profile</a>';
         login_elem.parentNode.removeChild(login_elem);
-        logout_button.parentNode.removeChild(logout_button);
+        //logout_button.parentNode.removeChild(logout_button);
 
     }
     else 
     {
         console.log("Logged out");
+        login_elem.style.display = "block";
     }
 });
 
@@ -161,10 +175,11 @@ login_button.onclick = function() {
 
 
 // logout
-log2.addEventListener('click', function () {
+logout_button.addEventListener('click', function () {
     auth.signOut()
     .then(function() {
         console.log("logged out")
+        login_elem.style.display = "block";
         logout_button.style.display = "none";
         render_username.innerHTML = "";
         render_username.style.display = "none";

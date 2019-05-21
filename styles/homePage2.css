@@ -30,8 +30,8 @@ body, html, #main {
     align-items: center;
 }
 
-#nav-button {
-
+.nav-button {
+	color: #039be5;
 }
 
 #logo {
