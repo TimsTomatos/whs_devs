@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../styles/chartist.min.css">
+    <link rel="stylesheet" href="../../../styles/chartist.min.css">
 
 
 
@@ -12,7 +12,7 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="../../styles/materialize.min.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../../../styles/materialize.min.css" media="screen,projection" />
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js" />
@@ -20,9 +20,9 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
 
-    <script type="text/javascript" src="../../apps/js/materialize.min.js"></script>
-    <link type="text/css" rel="stylesheet" href="../../styles/adminPage.css" media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="../../styles/animate.css" media="screen,projection" />
+    <script type="text/javascript" src="../../../apps/js/materialize.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="../../../styles/adminPage.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="../../../styles/animate.css" media="screen,projection" />
 </head>
 
 <body>
@@ -34,23 +34,25 @@
                     <li>
                         <div class="user-view">
                             <div class="background">
-                                <img id="backgroundImage" src="../../resc/background.jpg">
+                                <img id="backgroundImage" src="../../../resc/background.jpg">
                             </div>
-                            <a href="#user"><img class="circle" src="../../resc/ourLogo.png""></a>
+                            <a href="#user"><img class="circle" src="../../../resc/ourLogo.png""></a>
                 <a href=" #name"><span class="name">Admin</span></a>
                             <a href="#email"><span class="email">me@admin.com</span></a>
                         </div>
                     </li>
-                    <li ><a href="./dashboard.html"><i class="material-icons">dashboard</i>dashboard</a>
+                    <li><a href="../dashboard.html"><i class="material-icons">dashboard</i>dashboard</a>
                     </li>
                     <li>
                         <div class="divider"></div>
                     </li>
                     <li><a class="subheader">Applications</a></li>
-                    <li><a href="./applications/toDo.html"><i class="material-icons">note</i>To Do</a></li>
-                    <li><a href="./applications/mail.html"><i class="material-icons">email</i>Mail</a></li>
-                    <li ><a href="./applications/contacts.html"><i class="material-icons">contacts</i>Contacts</a></li>
-                    <li><a href="./applications/calendar.html"><i class="material-icons">date_range</i>Calender</a></li>
+                    <li class="active"><a href="../applications/toDo.html"><i class="material-icons">note</i>To Do</a>
+                    </li>
+                    <li><a href="../applications/mail.html"><i class="material-icons">email</i>Mail</a></li>
+                    <li><a href="../applications/contacts.html"><i class="material-icons">contacts</i>Contacts</a></li>
+                    <li><a href="../applications/calendar.html"><i class="material-icons">date_range</i>Calender</a>
+                    </li>
                     <li>
                         <div class="divider"></div>
                     </li>
@@ -62,9 +64,10 @@
                         <div class="divider"></div>
                     </li>
                     <li><a class="subheader">Pages</a></li>
-                    <li><a href="../pages/Contribution.html"><i class="material-icons">attach_money</i>Contributions</a>
+                    <li><a href="../../../pages/Contribution.html"><i
+                                class="material-icons">attach_money</i>Contributions</a>
                     </li>
-                    <li class="active"><a class="waves-effect" href="#!"><i class="material-icons">event</i>Event Posts</a></li>
+                    <li><a class="waves-effect" href="#!"><i class="material-icons">event</i>Event Posts</a></li>
                     <li>
                         <div class="divider"></div>
                     </li>
@@ -74,127 +77,66 @@
         <div id="colorHeader">
         </div>
         <div id="content" class="container">
-
-            <div id="navRow" class="row">
-                <div class="col-sm-10">
-                    <nav>
-                        <div class="nav-wrapper">
-                            <form>
-                                <div class="input-field">
-                                    <input id="search" type="search" required>
-                                    <label class="label-icon" for="search"><i class="material-icons">search</i></label>
-                                    <i class="material-icons">close</i>
+            <div id="colorHeadREAL">
+            </div>
+            <div class="card horizontal">
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <h4>Submit Event</h4>
+                        <div class="row">
+                            <form class="col s12">
+                                <div class="row">
+                                    <div class="file-field input-field col s12">
+                                        <div class="btn">
+                                            <span>File</span>
+                                            <input type="file" multiple>
+                                        </div>
+                                        <div class="file-path-wrapper">
+                                            <input class="file-path validate" type="text"
+                                                placeholder="Upload one or more files">
+                                        </div>
+                                    </div>
                                 </div>
-                            </form>
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <i class="material-icons prefix">event</i>
+                                        <input id="eventInput" type="text" class="validate">
+                                        <label for="eventInput">Event Name</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <i class="material-icons prefix">subtitles</i>
+                                        <input id="subHeaderInput" type="tel" class="validate">
+                                        <label for="subHeaderInput">Sub Header Name</label>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                        <label for="textarea1">Description</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                                            <i class="material-icons right">send</i>
+                                        </button>
+                                    </div>
+                                </div>
                         </div>
-                    </nav>
-                </div>
-                <div id="icons" class="col-md-2">
-                    <a href=""><label class="label-icon"><i
-                                class="clickable material-icons icon-white">fullscreen</i></label></a>
-                    <label class="label-icon"><i
-                            class="clickable material-icons icon-white">notifications_none</i></label>
-                    <a href=""><label class="label-icon"><i
-                                class="clickable material-icons icon-white">settings</i></label></a>
-                </div>
-            </div>
-
-            <div id="topRow" class="row">
-                <div class="col-sm-5">
-                    <div class="animated fadeInLeft card darken-1 topCard">
-                        <div class="card-content black-text">
-                            <span class="card-title">Total Hours</span>
-                            <div id="linePlot" class="ct-chart .ct-perfect-fifth"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-7">
-                    <div class=" animated fadeInRight card darken-1 topCard">
-                        <div class="card-content black-text">
-                            <span class="card-title">Comapany Donations</span>
-                            <div id="compBar" class="ct-chart .ct-major-seventh "></div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-            </div>
-
-
-            <div id="midRow" class="row">
-                <div class="col-md-5">
-                    <div class=" animated fadeInUp card darken-1 ">
-                        <div class="card-content black-text midCard">
-                            <span class="card-title">User Statistics</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class=" animated fadeInUp card darken-1 ">
-                        <div class="card-content black-text midCard">
-                            <span class="card-title">Upcoming Events</span>
-                            <p>Spring Fair</p>
-                            <p>Saftey Fair</p>
-                            <p>Voluneet Fair</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="animated fadeInUp card darken-1 ">
-                        <div class="card-content black-text midCard">
-                            <span class="card-title">Recent Signups</span>
-                            <p>Jeraldy Cascayan</p>
-                            <p>John Doe</p>
-                            <p>Jane Doe</p>
-                        </div>
-
                     </div>
                 </div>
 
 
             </div>
-
-            <div id="bottomRow" class="row">
-                <div class="col-md-4">
-                    <div class="animated fadeInUp card darken-1 ">
-                        <div class="card-content black-text">
-                            <span class="card-title">Total Members</span>
-                            <p>42</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-md-8">
-                    <div class="animated fadeInUp card darken-1 ">
-                        <div class="card-content black-text">
-                            <span class="card-title">Quaterly Value</span>
-                            <div id="quaterBar" class="ct-chart .ct-major-second"></div>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">This is a link</a>
-                            <a href="#">This is a link</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
         </div>
 
+
+
+
+        <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
-    </div>
-
-
-
-
-    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-    <script src="../../apps/chartist.min.js"></script>
+    <script src="../../../apps/chartist.min.js"></script>
 
 
 
@@ -208,7 +150,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
 
-    <script src="../../apps/adminPage.js"></script>
+    <script src="../../../apps/adminPage.js"></script>
 </body>
 
 </html>
