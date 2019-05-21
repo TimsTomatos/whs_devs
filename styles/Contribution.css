@@ -10,6 +10,11 @@ html,
 }
 
 /** Nav Bar **/
+.nav-button {
+	color: #039be5;
+}
+
+
 #navBar {
     height: 10%;
     display: flex;
