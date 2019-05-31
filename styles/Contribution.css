@@ -104,3 +104,7 @@ html,
     padding: 0 1rem;
     border-right: 1rem
 }
+
+.blue {
+    background-color: rgba(218, 59, 250, 0.062)
+}
